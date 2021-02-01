@@ -153,7 +153,7 @@ margin: auto;
 }
 
 .angel img {
-  width: 16rem;
+  width: 15rem;
   animation: 8s ease-in-out 1s infinite alternate angeVole;
   z-index: 10;
 }
@@ -434,6 +434,7 @@ margin: auto;
   }
  
   .angel img {
+    width: 15rem;
     height: auto;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
@@ -499,6 +500,7 @@ margin: auto;
     display: flex;
   }
   .angel img {
+    width: 8rem;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
     margin: auto;
@@ -571,6 +573,7 @@ margin: auto;
   
 
   .angel img {
+    width: 18rem;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
   
