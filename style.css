@@ -1,0 +1,599 @@
+/* BASIC RESETS */
+html,
+body {
+  font-family: 'Merriweather', sans-serif;    
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  font-size: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  background: #E4F9F5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********* HERO **************/
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url(images/Back-mountains.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.left-mountain img {
+  position: absolute;
+  left: -3rem;
+  bottom: 0;
+  width: 54%;
+}
+
+.right-mountain img {
+  position: absolute;
+  right: -5rem;
+  bottom: 0rem;
+  width: 65%;
+  z-index: -1;
+}
+
+/* HEADER / NAV-BAR */
+.header {
+  margin: 1rem;
+}
+
+/* NAVBAR BOOTSTRAP*/
+/* .navbar {
+  z-index: 1100;
+}
+
+nav .navbar-nav li a{
+  color: #11999E !important;
+  transition: color 0.3s ease;
+  padding: 1.5rem;
+  padding-right: 2rem !important;
+  }
+
+nav .navbar-nav li a:hover{
+  color: #CFB1D4 !important;
+  } */
+
+  /* NORMAL NAVBAR */
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 10vh;
+  z-index: 1100;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+  z-index: 1200;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 1.5rem;
+  color: #11999E;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #CFB1D4;
+}
+
+.toggler{
+  display: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #11999E;
+  cursor: pointer;
+  position: relative;
+  z-index: 1500;
+  margin: 0rem 2rem;
+}
+
+/* MAIN HEADING */
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.heading-first {
+font-family: 'Sacramento', cursive;
+font-size: 7rem;
+letter-spacing: 5px;
+color: #00b894;
+text-shadow: 1px 1.3px 1px gray;
+box-sizing: border-box;
+z-index: 1;
+width: auto;
+text-align: center;
+}
+
+.heading-second {
+  font-family: 'Merriweather', sans-serif;
+  text-align: center;
+  margin: 2rem;
+  font-weight: 200;
+  text-shadow: .4px 1px 3px lightgray;
+}
+
+span.first-letter {
+  color: #CFB1D4;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+span.second-letter {
+    color: #00b894;
+    font-size: 2rem;
+}
+
+/*  ANGE  */
+.angel {
+margin: auto;
+}
+
+.angel img {
+  width: 15rem;
+  animation: 8s ease-in-out 1s infinite alternate angeVole;
+  z-index: 10;
+}
+
+/* Affiner animation de l'ange*/
+@keyframes angeVole {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(5px);
+  
+  }
+  55% {
+    transform: translateY(20px) translateX(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* CLOUDS */
+.animation {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.cloud-first {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  animation: 50s ease-out 0s infinite running cloud-first-fly;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: -1;
+  margin: 2rem;
+}
+
+.cloud-first img {
+  width: 7rem;
+  height: auto;
+  position: relative;
+  box-sizing: border-box;
+  z-index: -1;
+  opacity: .9;
+}
+
+@keyframes cloud-first-fly {
+  0% { 
+      background-repeat: no-repeat;
+      transform: translateX(-150px) translateY(100px);
+  }
+  50% {
+      background-repeat: no-repeat;
+  }
+  100% { 
+      background-repeat: no-repeat;
+      transform: translateX(2000px);
+  }
+}
+
+.cloud-second {
+  display: inline-block;
+  animation: 120s ease-out 0s infinite running cloud-second-fly;
+  position: absolute;
+  top: 12rem;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.cloud-second img {
+  width: 7rem;
+  height: 2rem;
+  position: relative;
+  box-sizing: border-box;
+  opacity: .9;
+}
+
+@keyframes cloud-second-fly {
+  0% { 
+      background-repeat: no-repeat;
+      transform: translateX(-150px) translateY(70px);
+
+  }
+  50% {
+      background-repeat: no-repeat;
+
+  }
+  100% { 
+      background-repeat: no-repeat;
+      transform: translateX(2000px);
+  }
+}
+
+.cloud-third {
+  display: inline-block;
+  position: absolute;
+  animation: 300s cubic-bezier(0.19, 1, 0.22, 1) 0s infinite running cloud-third-fly;
+  top: 25rem;
+  left: 15rem;
+  z-index: -1;
+}
+
+.cloud-third img {
+  width: 4rem;
+}
+
+@keyframes cloud-third-fly {
+  0% { 
+      background-repeat: no-repeat;
+      transform: translateX(-800px) translateY(70px);
+
+  }
+  50% {
+      background-repeat: no-repeat;
+
+  }
+  100% { 
+      background-repeat: no-repeat;
+      transform: translateX(2000px);
+  }
+}
+
+.cloud-fourth {
+  display: inline-block;
+  position: absolute;
+  top: 12rem;
+  left: 7rem;
+  z-index: -1;
+  
+}
+
+.cloud-fourth img {
+  width: 2rem;
+  height: .8rem;
+  box-sizing: border-box;
+}
+
+.cloud-fifth {
+  display: inline-block;
+  position: absolute;
+  top: 25rem;
+  right: 4rem;
+  z-index: -1;
+  transform: rotateY(180deg);
+}
+
+.cloud-fifth img {
+  width: 5rem;
+  height: 2rem;
+  opacity: .8;
+}
+
+.cloud-sixth {
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  z-index: -1;
+  transform: rotateY(180deg);
+  opacity: .7;
+}
+
+.cloud-sixth img {
+  width: 8rem;
+  opacity: .9;
+}
+
+.cloud-seventh {
+  display: inline-block;
+  position: absolute;
+  animation: 120s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s infinite running cloud-seventh-fly;
+  top: 20rem;
+  z-index: -1;
+}
+
+.cloud-seventh img {
+  width: 3rem;
+  height: 1rem;
+  box-sizing: border-box;
+}
+
+@keyframes cloud-seventh-fly {
+  0% { 
+      background-repeat: no-repeat;
+      transform: translateX(-500px) translateY(70px);
+
+  }
+  50% {
+      background-repeat: no-repeat;
+
+  }
+  100% { 
+      background-repeat: no-repeat;
+      transform: translateX(2000px);
+  }
+}
+
+/* ABOUT */
+
+.about {
+  height: 100vh;
+  width: 100vh;
+}
+
+/* MEDIAS QUERIES */
+@media screen and (max-width: 600px) {
+  .hero {
+    width: 100%;
+    background: url(images/Back-mountains.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .toggler {
+    display: block;
+    font-size: 2.2rem;
+    color: #11999E;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+  }
+
+  .left-mountain img {
+    position: absolute;
+    left: -3rem;
+    bottom: 0;
+    width: 64%;
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .heading-first {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    color: #00b894;
+    text-shadow: 1px 1.3px 1px gray;
+    box-sizing: border-box;
+    z-index: 1;
+    width: auto;
+    text-align: center;
+    line-height: 1.1;
+    padding: .3rem;
+  }
+
+  .heading-second {
+    font-family: 'Merriweather', sans-serif;
+    /* padding: 1rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  span.first-letter {
+    color: #CFB1D4;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  span.second-letter {
+      color: #00b894;
+      font-size: 1rem;
+  }
+ 
+  .angel img {
+    width: 15rem;
+    height: auto;
+    animation: 8s ease-in-out 1s infinite alternate angeVole;
+    z-index: 10;
+    margin: auto;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-list {
+    display: none;
+    list-style: none;
+    padding: .5rem;
+  }
+  
+  .toggler{
+    display: flex;
+    font-size: 1.3rem;
+    color: #11999E;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+    margin: 0rem 2rem;
+  }
+
+  .heading-first {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: #00b894;
+    text-shadow: 1px 1.3px 1px gray;
+    box-sizing: border-box;
+    z-index: 1;
+    width: auto;
+    text-align: center;
+    line-height: 1.1;
+    padding: .3rem;
+  }
+
+  .heading-second {
+    font-family: 'Merriweather', sans-serif;
+    /* padding: 1rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  span.first-letter {
+    color: #CFB1D4;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  span.second-letter {
+      color: #00b894;
+      font-size: .8rem;
+  }
+  .angel {
+    display: flex;
+  }
+  .angel img {
+    width: 8rem;
+    animation: 8s ease-in-out 1s infinite alternate angeVole;
+    z-index: 10;
+    margin: auto;
+  }
+}
+
+@media screen (min-width: 2000px) {
+  .hero {
+    height: 100vh;
+    background: url(images/Back-mountains.png), url(images/);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .left-mountain img {
+    position: absolute;
+    left: -3rem;
+    bottom: 0;
+    width: 54%;
+  }
+  
+  .right-mountain img {
+    position: absolute;
+    right: -5rem;
+    bottom: 0rem;
+    width: 65%;
+    z-index: -1;
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .heading-first {
+  font-family: 'Sacramento', cursive;
+  font-size: 9rem;
+  letter-spacing: 5px;
+  color: #00b894;
+  text-shadow: 1px 1.3px 1px gray;
+  box-sizing: border-box;
+  z-index: 1;
+  width: auto;
+  text-align: center;
+  }
+  
+  .heading-second {
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  span.first-letter {
+    color: #CFB1D4;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  
+  span.second-letter {
+      color: #00b894;
+      font-size: 2rem;
+  }
+  
+
+  .angel img {
+    width: 18rem;
+    animation: 8s ease-in-out 1s infinite alternate angeVole;
+    z-index: 10;
+  
+  }
+}
+
+
+/* revoir taille et alignement du burger */
+@media screen and (max-width: 1024px), (max-height: 768px) {
+  .nav-list {
+    display: none;
+  }
+  .toggler {
+    display: flex;
+    font-size: 2rem;
+    color: #11999E;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+    margin: 0rem 2rem;
+  }
+}
+
