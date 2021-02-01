@@ -358,8 +358,18 @@ margin: auto;
 /* ABOUT */
 
 .about {
-  height: 100vh;
-  width: 100vh;
+
+}
+
+.angelbis {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.angelbis img {
+  width: 300px;
+  margin: auto;
 }
 
 /* MEDIAS QUERIES */
