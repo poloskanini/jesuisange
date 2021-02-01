@@ -361,3 +361,239 @@ margin: auto;
   height: 100vh;
   width: 100vh;
 }
+
+/* MEDIAS QUERIES */
+@media screen and (max-width: 600px) {
+  .hero {
+    width: 100%;
+    background: url(images/Back-mountains.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .toggler {
+    display: block;
+    font-size: 2.2rem;
+    color: #11999E;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+  }
+
+  .left-mountain img {
+    position: absolute;
+    left: -3rem;
+    bottom: 0;
+    width: 64%;
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .heading-first {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    color: #00b894;
+    text-shadow: 1px 1.3px 1px gray;
+    box-sizing: border-box;
+    z-index: 1;
+    width: auto;
+    text-align: center;
+    line-height: 1.1;
+    padding: .3rem;
+  }
+
+  .heading-second {
+    font-family: 'Merriweather', sans-serif;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  span.first-letter {
+    color: #CFB1D4;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  span.second-letter {
+      color: #00b894;
+      font-size: 1rem;
+  }
+ 
+  .angel img {
+    width: 15rem;
+    height: auto;
+    animation: 8s ease-in-out 1s infinite alternate angeVole;
+    z-index: 10;
+    margin: auto;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-list {
+    display: none;
+    list-style: none;
+    padding: .5rem;
+  }
+  
+  .toggler{
+    display: flex;
+    font-size: 1.3rem;
+    color: #11999E;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+    margin: 0rem 2rem;
+  }
+
+  .heading-first {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: #00b894;
+    text-shadow: 1px 1.3px 1px gray;
+    box-sizing: border-box;
+    z-index: 1;
+    width: auto;
+    text-align: center;
+    line-height: 1.1;
+    padding: .3rem;
+  }
+
+  .heading-second {
+    font-family: 'Merriweather', sans-serif;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  span.first-letter {
+    color: #CFB1D4;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  span.second-letter {
+      color: #00b894;
+      font-size: .8rem;
+  }
+  .angel {
+    display: flex;
+  }
+  .angel img {
+    width: 8rem;
+    animation: 8s ease-in-out 1s infinite alternate angeVole;
+    z-index: 10;
+    margin: auto;
+  }
+}
+
+@media screen (min-width: 2000px) {
+  .hero {
+    height: 100vh;
+    background: url(images/Back-mountains.png), url(images/);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .left-mountain img {
+    position: absolute;
+    left: -3rem;
+    bottom: 0;
+    width: 54%;
+  }
+  
+  .right-mountain img {
+    position: absolute;
+    right: -5rem;
+    bottom: 0rem;
+    width: 65%;
+    z-index: -1;
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .heading-first {
+  font-family: 'Sacramento', cursive;
+  font-size: 9rem;
+  letter-spacing: 5px;
+  color: #00b894;
+  text-shadow: 1px 1.3px 1px gray;
+  box-sizing: border-box;
+  z-index: 1;
+  width: auto;
+  text-align: center;
+  }
+  
+  .heading-second {
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  span.first-letter {
+    color: #CFB1D4;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  
+  span.second-letter {
+      color: #00b894;
+      font-size: 2rem;
+  }
+  
+
+  .angel img {
+    width: 18rem;
+    animation: 8s ease-in-out 1s infinite alternate angeVole;
+    z-index: 10;
+  
+  }
+}
+
+
+/* revoir taille et alignement du burger */
+@media screen and (max-width: 1024px), (max-height: 768px) {
+  .nav-list {
+    display: none;
+  }
+  .toggler {
+    display: flex;
+    font-size: 2rem;
+    color: #11999E;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+    margin: 0rem 2rem;
+  }
+}
+
