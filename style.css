@@ -358,18 +358,19 @@ margin: auto;
 /* ABOUT */
 
 .about {
-
+  height: 100vh;
 }
 
 .angelbis {
   display: flex;
   justify-content: center;
   margin: auto;
+  width: auto;
 }
 
 .angelbis-img {
   width: 300px;
-  margin: auto;
+  height: auto;
 }
 
 /* MEDIAS QUERIES */
