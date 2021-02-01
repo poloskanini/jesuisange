@@ -363,7 +363,7 @@ margin: auto;
 }
 
 /* MEDIAS QUERIES */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .hero {
     width: 100%;
     background: url(images/Back-mountains.png);
@@ -440,7 +440,7 @@ margin: auto;
     z-index: 10;
     margin: auto;
   }
-} */
+}
 
 @media screen and (max-height: 600px) {
   .nav-bar {
