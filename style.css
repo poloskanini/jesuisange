@@ -111,8 +111,8 @@ span.second-letter {
 
 /*  ANGE  */
 .angel {
-margin: auto;
-position: absolute;
+display: flex;
+justify-content: center;
 }
 
 .angel img {
@@ -140,7 +140,6 @@ position: absolute;
 
 /* CLOUDS */
 .animation {
-  position: absolute;
   left: 0;
   right: 0;
   top: 0;
