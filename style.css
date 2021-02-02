@@ -111,14 +111,16 @@ span.second-letter {
 
 /*  ANGE  */
 .angel {
+margin: auto;
 display: flex;
 justify-content: center;
 }
 
 .angel img {
-  width: 15rem;
+  width: 5rem;
   animation: 8s ease-in-out 1s infinite alternate angeVole;
   z-index: 10;
+  position: absolute;
 }
 
 /* Affiner animation de l'ange*/
@@ -140,6 +142,7 @@ justify-content: center;
 
 /* CLOUDS */
 .animation {
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -396,11 +399,6 @@ justify-content: center;
       font-size: 1rem;
   }
  
-  .angel {
-    display: flex;
-    justify-content: center;
-    }
-
   .angel img {
     width: 15rem;
     height: auto;
@@ -465,9 +463,8 @@ justify-content: center;
       font-size: .8rem;
   }
   .angel {
-  display: flex;
-  justify-content: center;
-}
+    display: flex;
+  }
   .angel img {
     width: 8rem;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
@@ -539,11 +536,7 @@ justify-content: center;
       color: #00b894;
       font-size: 2rem;
   }
-
-  .angel {
-    display: flex;
-    justify-content: center;
-    }
+  
 
   .angel img {
     width: 18rem;
