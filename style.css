@@ -401,6 +401,7 @@ justify-content: center;
  
   .angel {
     margin: auto;
+    padding-top: 2rem;
     display: flex;
     justify-content: center;
     }
