@@ -30,7 +30,18 @@ body {
   position: relative;
   left: 0;
   z-index: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  background: url(images/clouds-bottom.svg);
+  bottom: -3rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 8vh;
 }
 
 .left-mountain img {
@@ -43,7 +54,7 @@ body {
 .right-mountain img {
   position: absolute;
   right: -5rem;
-  bottom: 0rem;
+  bottom: 0;
   width: 65%;
   z-index: -1;
 }
@@ -88,15 +99,15 @@ nav .navbar-nav li a:hover{
 }
 
 .heading-first {
-font-family: 'Sacramento', cursive;
-font-size: 7rem;
-letter-spacing: 5px;
-color: #00b894;
-text-shadow: 1px 1.3px 1px gray;
-box-sizing: border-box;
-z-index: 1;
-width: auto;
-text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-size: 9rem;
+  letter-spacing: 5px;
+  color: #00b894;
+  text-shadow: 1px 1.3px 1px gray;
+  box-sizing: border-box;
+  z-index: 1;
+  width: auto;
+  text-align: center;
 }
 
 .heading-second {
@@ -271,8 +282,8 @@ justify-content: center;
 .cloud-fifth {
   display: inline-block;
   position: absolute;
-  top: 25rem;
-  right: 4rem;
+  top: 11rem;
+  right: 2rem;
   z-index: -1;
   transform: rotateY(180deg);
 }
@@ -332,6 +343,7 @@ justify-content: center;
 
 .about {
   height: 100vh;
+  background-color: white;
 }
 
 
@@ -351,6 +363,17 @@ justify-content: center;
     position: relative;
     left: 0;
     overflow: hidden;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    background: url(images/clouds-bottom.svg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2vh;
   }
 
   .nav-list {
@@ -422,6 +445,18 @@ justify-content: center;
 }
 
 @media screen and (max-height: 600px) {
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    background: url(images/clouds-bottom.svg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 8vh;
+  }
+
   .nav-bar {
     display: flex;
     justify-content: flex-end;
@@ -480,7 +515,7 @@ justify-content: center;
   }
 }
 
-@media screen (min-width: 2000px) {
+@media screen (min-width: 1000px) {
   .hero {
     height: 100vh;
     background: url(images/Back-mountains.png), url(images/);
@@ -516,15 +551,15 @@ justify-content: center;
   }
   
   .heading-first {
-  font-family: 'Sacramento', cursive;
-  font-size: 9rem;
-  letter-spacing: 5px;
-  color: #00b894;
-  text-shadow: 1px 1.3px 1px gray;
-  box-sizing: border-box;
-  z-index: 1;
-  width: auto;
-  text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 12rem;
+    letter-spacing: 5px;
+    color: #00b894;
+    text-shadow: 1px 1.3px 1px gray;
+    box-sizing: border-box;
+    z-index: 1;
+    width: auto;
+    text-align: center;
   }
   
   .heading-second {
