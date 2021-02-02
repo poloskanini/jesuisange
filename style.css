@@ -362,10 +362,6 @@ justify-content: center;
     padding-left: 2rem !important;
   }
 
-  .navbar .navlink {
-    padding-left: 0 !important;
-  }
-
   .left-mountain img {
     position: absolute;
     left: -3rem;
@@ -439,8 +435,8 @@ justify-content: center;
     padding: .5rem;
   }
 
-  .navbar .navlink {
-    padding-left: 0 !important;
+  .nav-link {
+    padding-left: 2rem !important;
   }
 
   .heading-first {
