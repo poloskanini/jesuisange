@@ -115,7 +115,7 @@ margin: auto;
 }
 
 .angel img {
-  width: 5rem;
+  width: 15rem;
   animation: 8s ease-in-out 1s infinite alternate angeVole;
   z-index: 10;
 }
