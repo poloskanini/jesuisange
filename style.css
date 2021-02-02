@@ -322,6 +322,10 @@ justify-content: center;
 
 /* ABOUT */
 
+.about {
+  height: 100vh;
+}
+
 
 .angelbis-img {
   width: 5rem;
