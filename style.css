@@ -58,6 +58,10 @@ body {
   z-index: 1100;
 }
 
+.nav-link {
+  padding-left: 2rem;
+}
+
 nav .navbar-nav li a{
   color: #11999E !important;
   transition: color 0.3s ease;
@@ -354,6 +358,10 @@ justify-content: center;
     display: none;
   }
 
+  .nav-link {
+    padding-left: 2rem !important;
+  }
+
   .navbar .navlink {
     padding-left: 0 !important;
   }
@@ -405,7 +413,6 @@ justify-content: center;
  
   .angel {
     margin: auto;
-    padding-top: 2rem;
     display: flex;
     justify-content: center;
     }
