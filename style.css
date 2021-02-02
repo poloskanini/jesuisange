@@ -361,8 +361,8 @@ margin: auto;
 .angelbis {
   display: flex;
   justify-content: center;
-  margin: auto;
   width: auto;
+  height: auto;
 }
 
 .angelbis-img {
