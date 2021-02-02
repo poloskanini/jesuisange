@@ -320,15 +320,8 @@ margin: auto;
 /* ABOUT */
 
 
-.angelbis {
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: auto;
-}
-
 .angelbis-img {
-  width: 5em;
+  width: 5rem;
   height: auto;
 }
 
