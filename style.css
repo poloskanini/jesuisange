@@ -112,6 +112,7 @@ span.second-letter {
 /*  ANGE  */
 .angel {
 margin: auto;
+position: absolute;
 }
 
 .angel img {
