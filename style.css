@@ -63,11 +63,16 @@ nav .navbar-nav li a{
   transition: color 0.3s ease;
   padding: 1.5rem;
   padding-right: 2rem !important;
-  }
+}
 
 nav .navbar-nav li a:hover{
   color: #CFB1D4 !important;
-  }
+}
+
+.navbar .navlink {
+  padding-left: 0 !important;
+}
+
 
 
 /* MAIN HEADING */
@@ -332,7 +337,7 @@ justify-content: center;
   height: auto;
 }
 
-/***************** MEDIAS QUERIES ****************************/
+/************************ MEDIAS QUERIES ****************************/
 @media screen and (max-width: 600px) {
   .hero {
     width: 100%;
@@ -349,13 +354,8 @@ justify-content: center;
     display: none;
   }
 
-  .toggler {
-    display: block;
-    font-size: 2.2rem;
-    color: #11999E;
-    cursor: pointer;
-    position: relative;
-    z-index: 1500;
+  .navbar .navlink {
+    padding-left: 0 !important;
   }
 
   .left-mountain img {
@@ -431,15 +431,9 @@ justify-content: center;
     list-style: none;
     padding: .5rem;
   }
-  
-  .toggler{
-    display: flex;
-    font-size: 1.3rem;
-    color: #11999E;
-    cursor: pointer;
-    position: relative;
-    z-index: 1500;
-    margin: 0rem 2rem;
+
+  .navbar .navlink {
+    padding-left: 0 !important;
   }
 
   .heading-first {
@@ -560,21 +554,3 @@ justify-content: center;
   position: absolute;
 }
 }
-
-
-/* revoir taille et alignement du burger */
-@media screen and (max-width: 1024px), (max-height: 768px) {
-  .nav-list {
-    display: none;
-  }
-  .toggler {
-    display: flex;
-    font-size: 2rem;
-    color: #11999E;
-    cursor: pointer;
-    position: relative;
-    z-index: 1500;
-    margin: 0rem 2rem;
-  }
-}
-
