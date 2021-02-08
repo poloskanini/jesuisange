@@ -9,6 +9,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background: #E4F9F5;
+  letter-spacing: 2px;
 }
 
 *,
@@ -23,7 +24,7 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url(images/Back-mountains.png);
+  background: url(images/Back-mountains.png), #E4F9F5;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -37,11 +38,11 @@ body {
   content: '';
   position: absolute;
   background: url(images/clouds-bottom.svg);
-  bottom: -3rem;
+  bottom: -2.7rem;
   left: 0;
   right: 0;
   width: 100%;
-  height: 8vh;
+  height: 10vh;
 }
 
 .left-mountain img {
@@ -60,8 +61,8 @@ body {
 }
 
 /* HEADER / NAV-BAR */
-.header {
-  margin: 1rem;
+header {
+  margin: 2rem;
 }
 
 /* NAVBAR BOOTSTRAP*/
@@ -71,24 +72,27 @@ body {
 
 .nav-link {
   padding-left: 2rem;
+  letter-spacing: 0;
 }
 
 nav .navbar-nav li a{
   color: #11999E !important;
   transition: color 0.3s ease;
   padding: 1.5rem;
-  padding-right: 2rem !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+
 }
 
 nav .navbar-nav li a:hover{
   color: #CFB1D4 !important;
+  border-bottom: 1px solid #CFB1D4;
+  padding-bottom: 20px;
 }
 
 .navbar .navlink {
   padding-left: 0 !important;
 }
-
-
 
 /* MAIN HEADING */
 .heading-container {
@@ -137,7 +141,7 @@ justify-content: center;
 }
 
 .angel img {
-  width: 15rem;
+  width: 17rem;
   animation: 8s ease-in-out 1s infinite alternate angeVole;
   z-index: 10;
   position: absolute;
@@ -339,18 +343,27 @@ justify-content: center;
   }
 }
 
-/* ABOUT */
+/* MAIN */
 
-.about {
-  height: 100vh;
-  background-color: white;
+.profile-section {
+  background: white;
+  min-height: 70vh;
+  z-index: 1;
+  position: relative;
+  padding: 3rem;
+}
+
+.profile-left {
+  height: 800px;
+  display: flex;
+}
+
+.profile-right {
+  display: flex;
+  flex-direction: column;
 }
 
 
-.angelbis-img {
-  width: 5rem;
-  height: auto;
-}
 
 /************************ MEDIAS QUERIES ****************************/
 @media screen and (max-width: 600px) {
@@ -396,6 +409,9 @@ justify-content: center;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    position: relative;
+    bottom: 15px;
+
   }
 
   .heading-first {
@@ -442,8 +458,12 @@ justify-content: center;
     z-index: 10;
     position: absolute;
   }
-}
 
+  .profile-left {
+    height: 200px;
+  }
+}
+/* ********************** */
 @media screen and (max-height: 600px) {
 
   .hero::after {
@@ -513,8 +533,12 @@ justify-content: center;
     z-index: 10;
     position: absolute;
   }
-}
 
+  .profile-left {
+    height: 200px;
+  }
+}
+/* ******************** */
 @media screen (min-width: 1000px) {
   .hero {
     height: 100vh;
@@ -592,3 +616,5 @@ justify-content: center;
   position: absolute;
 }
 }
+
+/*!!Penser à agrandir le NAV pour les screens > 2000px de width avec un media querie dédié */
