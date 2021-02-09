@@ -6,6 +6,7 @@ body {
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
   font-size: 16px;
+  color: #11999E;
   margin: 0;
   box-sizing: border-box;
   background: #E4F9F5;
@@ -100,6 +101,7 @@ nav .navbar-nav li a:hover{
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  margin-top: rem;
 }
 
 .heading-first {
@@ -345,11 +347,15 @@ justify-content: center;
 
 /* MAIN */
 
+.main-section {
+  background: white;
+}
+
 /* PROFILE-SECTION */
 .profile-section {
   background: white;
-  min-height: 50vh;
-  z-index: 1;
+  min-height: 30vh;
+  z-index: 0;
   position: relative;
   padding: 2rem;
 }
@@ -359,6 +365,7 @@ justify-content: center;
   max-width: 100%;
   position: relative;
   align-items: center;
+  margin: 3rem;
 }
 
 .profile-image {
@@ -377,38 +384,43 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem;
-  background: linear-gradient(white, rgb(245, 243, 243));
+  margin: 2rem;
+  background: linear-gradient(white, white, rgb(245, 243, 243));
 }
 
 .profile-title {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .profile-text {
   text-align: justify;
   margin-top: 2rem;
+  padding: 1.5rem;
 }
 
 /* SERVICES SECTION */
-
 .services-section {
   height: 100vh;
-  background: linear-gradient(white, #E4F9F5);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: white;
 }
 
+/* CLOUD DIVIDER */
 .cloud-divider {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.cloud-divider-img {
-  padding: 6rem;
+  background: white;
+  margin: auto;
+  width: 12rem;
 }
 
 
 /************************ MEDIAS QUERIES ****************************/
+
+/* ***********   MOBILE PORTRAIT     *********** */
 @media screen and (max-width: 600px) {
   .hero {
     width: 100%;
@@ -424,7 +436,7 @@ justify-content: center;
   .hero::after {
     content: '';
     position: absolute;
-    background: url(images/clouds-bottom.svg);
+    background: url(images/clouds-bottom.svg), white;
     bottom: 0;
     left: 0;
     right: 0;
@@ -502,19 +514,34 @@ justify-content: center;
   .profile-left {
     display: flex;
     max-width: 100%;
+    margin: 0;
   }
   
   .profile-image {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
+    filter: grayscale(1);
+    transition: ease 2s filter;
+    margin-top: 3rem;
+    margin-bottom: 0;
   }
   
   .profile-right {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
+
+  /* CLOUD DIVIDER */
+  .cloud-divider {
+    background: white;
+    margin: auto;
+    width: 7rem;
+  }
+
+
 }
-/* ********************** */
+/* ***********   MOBILE PAYSAGE     *********** */
 @media screen and (max-height: 600px) {
 
   .hero::after {
@@ -583,6 +610,53 @@ justify-content: center;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
     position: absolute;
+  }
+
+  .profile-section {
+    background: white;
+    min-height: 30vh;
+    z-index: 0;
+    position: relative;
+    padding: 2rem;
+  }
+  
+  .profile-left {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  
+  .profile-image {
+    width: 10rem;
+    height: 10rem;
+    filter: grayscale(1);
+    transition: ease 2s filter;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image:hover {
+    filter: grayscale(0);
+  }
+  
+  .profile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(white, rgb(245, 243, 243));
+  }
+  
+  .profile-title {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .profile-text {
+    text-align: justify;
+    margin-top: 2rem;
   }
 }
 /* ******************** */
