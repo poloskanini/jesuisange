@@ -46,6 +46,9 @@ body {
   height: 10vh;
 
 }
+.mountains {
+  overflow: hidden;
+}
 
 .left-mountain img {
   position: absolute;
@@ -73,7 +76,7 @@ header {
 /* NAVBAR BOOTSTRAP*/
 .navbar {
   z-index: 5000;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .nav-link {
@@ -119,6 +122,7 @@ nav .navbar-nav li a:hover{
   z-index: 1;
   width: auto;
   text-align: center;
+  margin: 2rem 2rem;
 }
 
 .heading-second {
@@ -127,6 +131,7 @@ nav .navbar-nav li a:hover{
   margin: 2rem;
   font-weight: 200;
   text-shadow: .4px 1px 3px lightgray;
+  line-height: 2.3rem;
 }
 
 span.first-letter {
@@ -145,13 +150,20 @@ span.second-letter {
 margin: auto;
 display: flex;
 justify-content: center;
+position: relative;
 }
 
-.angel img {
+.angel-img {
   width: 17rem;
   animation: 8s ease-in-out 1s infinite alternate angeVole;
   z-index: 10;
   position: absolute;
+}
+
+.bulle-img {
+  width: 4rem;
+  position: absolute;
+  right: 6rem;
 }
 
 /* Affiner animation de l'ange*/
@@ -226,8 +238,8 @@ justify-content: center;
 }
 
 .cloud-second img {
-  width: 7rem;
-  height: 2rem;
+  width: 4rem;
+  height: 1.5rem;
   position: relative;
   box-sizing: border-box;
   opacity: .9;
@@ -501,7 +513,8 @@ justify-content: center;
 
 
 
-/************************ MEDIAS QUERIES ****************************/
+/********** MEDIAS QUERIES **************/
+
 
 /* ***********   MOBILE PORTRAIT     *********** */
 @media screen and (max-width: 600px) {
@@ -537,9 +550,21 @@ justify-content: center;
 
   .left-mountain img {
     position: absolute;
-    left: -3rem;
+    left: -4rem;
     bottom: 0;
-    width: 64%;
+    width: 96%;
+  }
+
+  .right-mountain {
+    overflow: hidden;
+  }
+  
+  .right-mountain img {
+    position: absolute;
+    left: 11rem;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
   }
 
   .heading-container {
@@ -560,38 +585,44 @@ justify-content: center;
     width: auto;
     text-align: center;
     line-height: 1.1;
-    padding: .3rem;
+    padding: 1rem;
     margin: 1rem 0;
   }
 
   .heading-second {
     font-family: 'Merriweather', sans-serif;
-    padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem 2rem 4rem;
   }
 
   span.first-letter {
     color: #CFB1D4;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bolder;
   }
   span.second-letter {
       color: #00b894;
-      font-size: 1rem;
+      font-size: 1.1rem;
   }
  
   .angel {
     margin: auto;
     display: flex;
     justify-content: center;
+    position: relative;
     }
     
-  .angel img {
+  .angel-img {
     width: 8rem;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
     position: absolute;
+  }
+
+  .bulle-img {
+    width: 6rem;
+    position: absolute;
+    right: 3rem;
+    bottom: -4rem;
   }
 
   .profile-left {
@@ -621,9 +652,6 @@ justify-content: center;
     margin: auto;
     width: 7rem;
   }
-
-  
-
 
 }
 /* ***********   MOBILE PAYSAGE     *********** */
@@ -669,6 +697,8 @@ justify-content: center;
     text-align: center;
     line-height: 1.1;
     padding: .3rem;
+    width: 85%;
+    margin: auto;
   }
 
   .heading-second {
@@ -690,7 +720,7 @@ justify-content: center;
     display: flex;
     justify-content: center;
     }
-  .angel img {
+  .angel-img {
     width: 8rem;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
@@ -744,8 +774,109 @@ justify-content: center;
     margin-top: 2rem;
   }
 }
-/* ******************** */
-@media screen (min-width: 1000px) {
+
+/***** IPAD PORTRAIT ******/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+  .nav-link {
+    font-size: 1.3rem;
+  }
+
+  .heading-first {
+    font-family: 'Sacramento', cursive;
+    font-size: 9rem;
+    letter-spacing: 5px;
+    color: #00b894;
+    text-shadow: 1px 1.3px 1px gray;
+    box-sizing: border-box;
+    z-index: 1;
+    width: auto;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .heading-second {
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 200;
+    text-shadow: .4px 1px 3px lightgray;
+    line-height: 2.3rem;
+    width: 81%;
+  }
+
+  .angel {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+    
+  .angel-img {
+    width: 16rem;
+    animation: 8s ease-in-out 1s infinite  alternatangeVole;
+    z-index: 10;
+    position: absolute;
+  }
+
+  .angel {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    }
+
+  .bulle-img {
+    width: 6rem;
+    position: absolute;
+    right: 7rem;
+    bottom: -6rem;
+  }
+
+  .left-mountain img {
+    position: absolute;
+    left: -10rem;
+    bottom: 0;
+    width: 96%;
+  }
+
+  .right-mountain {
+    overflow: hidden;
+  }
+  
+  .right-mountain img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    transform: scaleX(-1);
+  }
+}
+
+/* IPAD PRO PORTRAIT */
+@media only screen and (min-device-width: 1023px) and (max-device-width: 1365px) and (orientation: portrait) {
+
+  .heading-second {
+    margin-bottom: 8rem;
+  }
+
+  .bulle-img {
+    width: 11rem;
+    position: absolute;
+    right: 7rem;
+    bottom: -6rem;
+  }
+
+}
+
+/****** IPAD PAYSAGE ******/
+
+  
+  
+
+/* ********  1000px ************ */
+@media screen (max-width: 1000px) {
   .hero {
     height: 100vh;
     background: url(images/Back-mountains.png), url(images/);
@@ -815,12 +946,18 @@ justify-content: center;
   justify-content: center;
   }
   
-.angel img {
+.angel-img {
   width: 18rem;
   animation: 8s ease-in-out 1s infinite alternate angeVole;
   z-index: 10;
   position: absolute;
-}
+  }
+
+  .bulle-img {
+    width: 8rem;
+    position: absolute;
+    right: 6rem;
+  }
 }
 
 /*!!Penser à agrandir le NAV pour les screens > 2000px de width avec un media querie dédié */
