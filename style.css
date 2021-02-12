@@ -2,15 +2,14 @@
 html,
 body {
   font-family: 'Merriweather', sans-serif;    
-  scroll-behavior: inherit;
+  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   font-size: 16px;
   color: #11999E;
   margin: 0;
   box-sizing: border-box;
-  background: #E4F9F5;
   letter-spacing: 2px;
-  overflow-x: hidden;
+  height: 100%;
 }
 
 *,
@@ -31,7 +30,9 @@ body {
   background-size: cover;
   position: relative;
   left: 0;
+  top: 0;
   z-index: 0;
+
 }
 
 .hero::after {
@@ -43,6 +44,7 @@ body {
   right: 0;
   width: 100%;
   height: 10vh;
+
 }
 
 .left-mountain img {
@@ -71,6 +73,7 @@ header {
 /* NAVBAR BOOTSTRAP*/
 .navbar {
   z-index: 5000;
+  padding: 2rem 2rem;
 }
 
 .nav-link {
@@ -174,17 +177,20 @@ justify-content: center;
   right: 0;
   top: 0;
   bottom: 0;
+  position: absolute;
+  overflow-x: hidden;
 }
 
 .cloud-first {
   display: inline-block;
   width: 100px;
   height: auto;
-  animation: 50s ease-out 0s infinite running cloud-first-fly;
+  animation: 39s ease-out 0s infinite running cloud-first-fly;
   position: absolute;
   box-sizing: border-box;
   z-index: -1;
   margin: 2rem;
+  overflow-x: hidden;
 }
 
 .cloud-first img {
@@ -199,14 +205,14 @@ justify-content: center;
 @keyframes cloud-first-fly {
   0% { 
       background-repeat: no-repeat;
-      transform: translateX(-150px) translateY(100px);
+      transform: translateX(-100%);
   }
   50% {
       background-repeat: no-repeat;
   }
   100% { 
       background-repeat: no-repeat;
-      transform: translateX(2000px);
+      transform: translateX(4000px);
   }
 }
 
@@ -501,10 +507,10 @@ justify-content: center;
 @media screen and (max-width: 600px) {
   .hero {
     width: 100%;
-    background: url(images/Back-mountains.png);
+    background: url(images/Back-mountains.png), #E4F9F5;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     left: 0;
     overflow: hidden;
