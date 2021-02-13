@@ -714,7 +714,8 @@ position: relative;
   .heading-second {
     font-family: 'Merriweather', sans-serif;
     padding: 0;
-    margin: 0;
+    width: 80%;
+    margin: auto;
     margin-bottom: 0;
   }
   span.first-letter {
