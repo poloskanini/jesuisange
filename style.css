@@ -187,12 +187,12 @@ position: relative;
 
 /* CLOUDS */
 .animation {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   position: absolute;
   overflow-x: hidden;
+  z-index: -1;
+  height: 120vh;
+  width: 100vw;
+  top: 0 ;
 }
 
 .cloud-first {
@@ -240,8 +240,8 @@ position: relative;
 }
 
 .cloud-second img {
-  width: 4rem;
-  height: 1.5rem;
+  width: 6rem;
+  height: 2rem;
   position: relative;
   box-sizing: border-box;
   opacity: .9;
@@ -273,7 +273,7 @@ position: relative;
 }
 
 .cloud-third img {
-  width: 4rem;
+  width: 5rem;
 }
 
 @keyframes cloud-third-fly {
