@@ -132,6 +132,8 @@ nav .navbar-nav li a:hover{
   font-weight: 200;
   text-shadow: .4px 1px 3px lightgray;
   line-height: 2.3rem;
+  width: 80%;
+  margin: auto;
 }
 
 span.first-letter {
