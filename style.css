@@ -566,9 +566,9 @@ position: relative;
 
   .left-mountain img {
     position: absolute;
-    left: -8rem;
+    left: -9rem;
     bottom: 0;
-    width: 120%;
+    width: 130%;
   }
 
   .right-mountain {
