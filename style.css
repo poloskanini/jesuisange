@@ -520,10 +520,11 @@ position: relative;
 @media screen and (max-width: 600px) {
   .hero {
     width: 100%;
+    height: 102vh;
     background: url(images/Back-mountains.png), #E4F9F5;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: contain;
+    background-size: auto;
     position: relative;
     left: 0;
     overflow: hidden;
@@ -548,11 +549,15 @@ position: relative;
     padding-left: 2rem !important;
   }
 
+  .left-mountain {
+    overflow: hidden;
+  }
+
   .left-mountain img {
     position: absolute;
-    left: -4rem;
+    left: -8rem;
     bottom: 0;
-    width: 96%;
+    width: 120%;
   }
 
   .right-mountain {
@@ -561,9 +566,9 @@ position: relative;
   
   .right-mountain img {
     position: absolute;
-    left: 11rem;
+    left: 10rem;
     bottom: 0;
-    width: 100%;
+    width: 127%;
     z-index: -1;
   }
 
@@ -687,7 +692,7 @@ position: relative;
 
   .heading-first {
     font-family: 'Sacramento', cursive;
-    font-size: 3rem;
+    font-size: 3.2rem;
     letter-spacing: 5px;
     color: #00b894;
     text-shadow: 1px 1.3px 1px gray;
@@ -708,12 +713,12 @@ position: relative;
   }
   span.first-letter {
     color: #CFB1D4;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bolder;
   }
   span.second-letter {
     color: #00b894;
-    font-size: .8rem;
+    font-size: 1rem;
   }
   .angel {
     margin: auto;
