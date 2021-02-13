@@ -543,6 +543,15 @@ position: relative;
     height: 2vh;
   }
 
+  .animation {
+    position: absolute;
+    overflow-x: hidden;
+    z-index: -1;
+    height: 120vh;
+    width: 100vw;
+    top: 0 ;
+  }
+
   .nav-list {
     display: none;
   }
@@ -677,6 +686,15 @@ position: relative;
     height: 8vh;
   }
 
+  .animation {
+    position: absolute;
+    overflow-x: hidden;
+    z-index: -1;
+    height: 120vh;
+    width: 100vw;
+    top: 0 ;
+  }
+
   .nav-bar {
     display: flex;
     justify-content: flex-end;
@@ -790,6 +808,15 @@ position: relative;
 /***** IPAD PORTRAIT ******/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 
+  .animation {
+    position: absolute;
+    overflow-x: hidden;
+    z-index: -1;
+    height: 120vh;
+    width: 100vw;
+    top: 0 ;
+  }
+
   .nav-link {
     font-size: 1.3rem;
   }
@@ -869,6 +896,15 @@ position: relative;
 /* IPAD PRO PORTRAIT */
 @media only screen and (min-device-width: 1023px) and (max-device-width: 1365px) and (orientation: portrait) {
 
+  .animation {
+    position: absolute;
+    overflow-x: hidden;
+    z-index: -1;
+    height: 120vh;
+    width: 100vw;
+    top: 0 ;
+  }
+
   .heading-second {
     margin-bottom: 8rem;
   }
@@ -899,6 +935,15 @@ position: relative;
     left: 0;
     z-index: 0;
     overflow: hidden;
+  }
+
+  .animation {
+    position: absolute;
+    overflow-x: hidden;
+    z-index: -1;
+    height: 120vh;
+    width: 100vw;
+    top: 0 ;
   }
   
   .left-mountain img {
