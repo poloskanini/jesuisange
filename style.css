@@ -76,7 +76,11 @@ header {
 /* NAVBAR BOOTSTRAP*/
 .navbar {
   z-index: 5000;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
+}
+
+.navbar-toggler-icon {
+  color: #11999E;
 }
 
 .nav-link {
@@ -126,11 +130,9 @@ nav .navbar-nav li a:hover{
 }
 
 .heading-second {
-  font-family: 'Merriweather', sans-serif;
-  text-align: center;
+  font-family: 'Playfair Display', serif;  text-align: center;
   margin: 2rem;
   font-weight: 200;
-  text-shadow: .4px 1px 3px lightgray;
   line-height: 2.3rem;
   width: 80%;
   margin: auto;
@@ -153,10 +155,11 @@ margin: auto;
 display: flex;
 justify-content: center;
 position: relative;
+margin-top: 3rem;
 }
 
 .angel-img {
-  width: 17rem;
+  width: 15rem;
   animation: 8s ease-in-out 1s infinite alternate angeVole;
   z-index: 10;
   position: absolute;
@@ -232,7 +235,7 @@ position: relative;
 
 .cloud-second {
   display: inline-block;
-  animation: 120s ease-out 0s infinite running cloud-second-fly;
+  animation: 70s ease-out 0s infinite running cloud-second-fly;
   position: absolute;
   top: 12rem;
   box-sizing: border-box;
@@ -250,7 +253,7 @@ position: relative;
 @keyframes cloud-second-fly {
   0% { 
       background-repeat: no-repeat;
-      transform: translateX(-150px) translateY(70px);
+      transform: translateX(-100px) translateY(70px);
 
   }
   50% {
@@ -371,6 +374,20 @@ position: relative;
 
 .main-section {
   background: white;
+  filter: grayscale(1);
+  transition: all ease 1s;
+  height: 100vh;
+}
+
+.main-section:hover {
+  filter: grayscale(0);
+}
+
+/* INTRODUCTION */
+.introduction {
+  margin: 8rem 0 0;
+  position: relative;
+  width: 100%;
 }
 
 /* PROFILE-SECTION */
@@ -393,14 +410,11 @@ position: relative;
 .profile-image {
   width: 30rem;
   height: 30rem;
-  filter: grayscale(1);
   transition: ease 2s filter;
   margin-bottom: 2rem;
 }
 
-.profile-image:hover {
-  filter: grayscale(0);
-}
+
 
 .profile-right {
   display: flex;
@@ -606,8 +620,7 @@ position: relative;
   }
 
   .heading-second {
-    font-family: 'Merriweather', sans-serif;
-    width: 80%;
+    font-family: 'Playfair Display', serif;    width: 80%;
     margin: auto;
     margin-bottom: 2rem;
   }
@@ -730,8 +743,7 @@ position: relative;
   }
 
   .heading-second {
-    font-family: 'Merriweather', sans-serif;
-    padding: 0;
+    font-family: 'Playfair Display', serif;    padding: 0;
     width: 80%;
     margin: auto;
     margin-bottom: 0;
@@ -835,13 +847,11 @@ position: relative;
   }
 
   .heading-second {
-    font-family: 'Merriweather', sans-serif;
-    text-align: center;
+    font-family: 'Playfair Display', serif;    text-align: center;
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 3rem;
     font-weight: 200;
-    text-shadow: .4px 1px 3px lightgray;
     line-height: 2.3rem;
     width: 81%;
   }
@@ -906,6 +916,7 @@ position: relative;
   }
 
   .heading-second {
+    font-family: 'Playfair Display', serif;
     margin-bottom: 8rem;
   }
 
@@ -981,7 +992,7 @@ position: relative;
   }
   
   .heading-second {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     margin: 2rem;
   }
