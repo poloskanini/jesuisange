@@ -623,6 +623,7 @@ margin-top: 3rem;
     font-family: 'Playfair Display', serif;    width: 80%;
     margin: auto;
     margin-bottom: 2rem;
+    line-height: 1.7rem;
   }
 
   span.first-letter {
@@ -632,7 +633,7 @@ margin-top: 3rem;
   }
   span.second-letter {
       color: #00b894;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
   }
  
   .angel {
@@ -835,7 +836,7 @@ margin-top: 3rem;
 
   .heading-first {
     font-family: 'Sacramento', cursive;
-    font-size: 9rem;
+    font-size: 7.5rem;
     letter-spacing: 5px;
     color: #00b894;
     text-shadow: 1px 1.3px 1px gray;
@@ -843,17 +844,17 @@ margin-top: 3rem;
     z-index: 1;
     width: auto;
     text-align: center;
-    margin-top: 2rem;
+    margin: 0 2rem;
   }
 
   .heading-second {
     font-family: 'Playfair Display', serif;    text-align: center;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 1.7rem;
     margin-bottom: 3rem;
     font-weight: 200;
     line-height: 2.3rem;
-    width: 81%;
+    width: 57%;
   }
 
   .angel {
@@ -864,7 +865,7 @@ margin-top: 3rem;
     
   .angel-img {
     width: 16rem;
-    animation: 8s ease-in-out 1s infinite  alternatangeVole;
+    animation: 8s ease-in-out 1s infinite  alternate angeVole;
     z-index: 10;
     position: absolute;
   }
@@ -903,7 +904,64 @@ margin-top: 3rem;
   }
 }
 
-/* IPAD PRO PORTRAIT */
+/****** IPAD PAYSAGE ******/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  .heading-first {
+    font-family: 'Sacramento', cursive;
+    font-size: 7.5rem;
+    letter-spacing: 5px;
+    color: #00b894;
+    text-shadow: 1px 1.3px 1px gray;
+    box-sizing: border-box;
+    z-index: 1;
+    width: auto;
+    text-align: center;
+    margin: 1rem 2rem 2rem;
+  }
+
+  .heading-second {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 200;
+    line-height: 2.3rem;
+    width: 100%;
+  }
+
+  span.first-letter {
+    color: #CFB1D4;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  
+  span.second-letter {
+      color: #00b894;
+      font-size: 2rem;
+  }
+
+  .angel {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 1rem;
+    }
+    
+  .angel-img {
+    width: 15rem;
+    animation: 8s ease-in-out 1s infinite alternate angeVole;
+    z-index: 10;
+    position: absolute;
+  }
+}  
+
+/*** IPAD PRO PORTRAIT ***/
 @media only screen and (min-device-width: 1023px) and (max-device-width: 1365px) and (orientation: portrait) {
 
   .animation {
@@ -915,9 +973,24 @@ margin-top: 3rem;
     top: 0 ;
   }
 
+  .heading-first {
+    font-family: 'Sacramento', cursive;
+    font-size: 10rem;
+    letter-spacing: 5px;
+    color: #00b894;
+    text-shadow: 1px 1.3px 1px gray;
+    box-sizing: border-box;
+    z-index: 1;
+    width: auto;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
   .heading-second {
     font-family: 'Playfair Display', serif;
+    margin-top: 3rem;
     margin-bottom: 8rem;
+    width: 64%;
   }
 
   .bulle-img {
@@ -927,12 +1000,29 @@ margin-top: 3rem;
     bottom: -6rem;
   }
 
+  span.first-letter {
+    color: #CFB1D4;
+    font-size: 3.4rem;
+    font-weight: bolder;
+  }
+  
+  span.second-letter {
+      color: #00b894;
+      font-size: 2.4rem;
+  }
 }
 
-/****** IPAD PAYSAGE ******/
-
-  
-  
+/*** IPAD PRO PAYSAGE ***/
+@media only screen and (min-device-width: 1023px) and (max-device-width: 1365px) and (orientation: landscape) {
+  .heading-second {
+    font-family: 'Playfair Display', serif;  text-align: center;
+    margin-top: 2rem;
+    font-weight: 200;
+    line-height: 2.3rem;
+    width: 80%;
+    margin: auto;
+  }
+}
 
 /* ********  1000px ************ */
 @media screen (max-width: 1000px) {
@@ -1008,18 +1098,18 @@ margin-top: 3rem;
       font-size: 2rem;
   }
 
-.angel {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  }
-  
-.angel-img {
-  width: 18rem;
-  animation: 8s ease-in-out 1s infinite alternate angeVole;
-  z-index: 10;
-  position: absolute;
-  }
+  .angel {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    }
+
+  .angel-img {
+    width: 18rem;
+    animation: 8s ease-in-out 1s infinite alternate angeVole;
+    z-index: 10;
+    position: absolute;
+    }
 
   .bulle-img {
     width: 8rem;
