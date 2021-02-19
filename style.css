@@ -32,7 +32,6 @@ body {
   left: 0;
   top: 0;
   z-index: 0;
-
 }
 
 .hero::after {
@@ -76,7 +75,7 @@ header {
 /* NAVBAR BOOTSTRAP*/
 .navbar {
   z-index: 5000;
-  padding: 2rem 2rem;
+  padding: 2rem 2rem .5rem;
 }
 
 .navbar-toggler-icon {
@@ -85,7 +84,7 @@ header {
 
 .nav-link {
   padding-left: 2rem;
-  letter-spacing: 0;
+  letter-spacing: ;
 }
 
 nav .navbar-nav li a{
@@ -94,7 +93,6 @@ nav .navbar-nav li a{
   padding: 1.5rem;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
-
 }
 
 nav .navbar-nav li a:hover{
@@ -113,7 +111,7 @@ nav .navbar-nav li a:hover{
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-top: rem;
+  margin-top: 1rem;
 }
 
 .heading-first {
@@ -282,7 +280,7 @@ margin-top: 3rem;
 @keyframes cloud-third-fly {
   0% { 
       background-repeat: no-repeat;
-      transform: translateX(-800px) translateY(70px);
+      transform: translateX(-600px) translateY(70px);
 
   }
   50% {
@@ -375,7 +373,7 @@ margin-top: 3rem;
 .main-section {
   background: white;
   filter: grayscale(1);
-  transition: all ease 1s;
+  transition: all ease 2s;
   height: 100vh;
 }
 
@@ -385,7 +383,7 @@ margin-top: 3rem;
 
 /* INTRODUCTION */
 .introduction {
-  margin: 8rem 0 0;
+  margin: 5rem 0 0;
   position: relative;
   width: 100%;
 }
@@ -616,14 +614,17 @@ margin-top: 3rem;
     text-align: center;
     line-height: 1.1;
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 0rem 0;
   }
 
   .heading-second {
-    font-family: 'Playfair Display', serif;    width: 80%;
+    font-family: 'Playfair Display', serif;
+    width: 81%;
     margin: auto;
     margin-bottom: 2rem;
+    margin-top: 3rem;
     line-height: 1.7rem;
+    font-weight: 200;
   }
 
   span.first-letter {
@@ -738,6 +739,7 @@ margin-top: 3rem;
     text-align: center;
     line-height: 1.1;
     padding: .3rem;
+    padding-top: 0;
     width: 85%;
     margin: auto;
     margin-bottom: 0;
@@ -764,7 +766,7 @@ margin-top: 3rem;
     justify-content: center;
     }
   .angel-img {
-    width: 8rem;
+    width: 7rem;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
     position: absolute;
@@ -831,7 +833,7 @@ margin-top: 3rem;
   }
 
   .nav-link {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .heading-first {
@@ -844,7 +846,7 @@ margin-top: 3rem;
     z-index: 1;
     width: auto;
     text-align: center;
-    margin: 0 2rem;
+    margin: 1rem 2rem;
   }
 
   .heading-second {
@@ -864,7 +866,7 @@ margin-top: 3rem;
   }
     
   .angel-img {
-    width: 16rem;
+    width: 14rem;
     animation: 8s ease-in-out 1s infinite  alternate angeVole;
     z-index: 10;
     position: absolute;
@@ -907,12 +909,37 @@ margin-top: 3rem;
 /****** IPAD PAYSAGE ******/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 
+  .hero {
+    height: 103vh;
+    background: url(images/Back-mountains.png), #E4F9F5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+
   .navbar {
     padding: 1rem 2rem;
   }
+
+  nav .navbar-nav li a{
+    color: #11999E !important;
+    transition: color 0.3s ease;
+    padding: 1.5rem;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+
+  a.nav-link {
+    font-size: .8rem;
+  }
+  
   .heading-first {
     font-family: 'Sacramento', cursive;
-    font-size: 7.5rem;
+    font-size: 6rem;
     letter-spacing: 5px;
     color: #00b894;
     text-shadow: 1px 1.3px 1px gray;
@@ -920,15 +947,13 @@ margin-top: 3rem;
     z-index: 1;
     width: auto;
     text-align: center;
-    margin: 1rem 2rem 2rem;
+    margin-top: 0;
   }
 
   .heading-second {
     font-family: 'Playfair Display', serif;
     text-align: center;
     margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
     font-weight: 200;
     line-height: 2.3rem;
     width: 100%;
@@ -936,13 +961,13 @@ margin-top: 3rem;
 
   span.first-letter {
     color: #CFB1D4;
-    font-size: 3rem;
+    font-size: 1.7rem;
     font-weight: bolder;
   }
   
   span.second-letter {
       color: #00b894;
-      font-size: 2rem;
+      font-size: 1.1rem;
   }
 
   .angel {
@@ -950,11 +975,11 @@ margin-top: 3rem;
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 1rem;
+    margin-top: 2rem;
     }
     
   .angel-img {
-    width: 15rem;
+    width: 10rem;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
     position: absolute;
@@ -983,13 +1008,13 @@ margin-top: 3rem;
     z-index: 1;
     width: auto;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 
   .heading-second {
     font-family: 'Playfair Display', serif;
     margin-top: 3rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     width: 64%;
   }
 
@@ -1014,6 +1039,7 @@ margin-top: 3rem;
 
 /*** IPAD PRO PAYSAGE ***/
 @media only screen and (min-device-width: 1023px) and (max-device-width: 1365px) and (orientation: landscape) {
+  
   .heading-second {
     font-family: 'Playfair Display', serif;  text-align: center;
     margin-top: 2rem;
@@ -1023,6 +1049,57 @@ margin-top: 3rem;
     margin: auto;
   }
 }
+
+/*** IPHONE X ***/
+@media only screen
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) {
+  .heading-first {
+      font-family: 'Sacramento', cursive;
+      font-size: 4rem;
+      letter-spacing: 5px;
+      color: #00b894;
+      text-shadow: 1px 1.3px 1px gray;
+      box-sizing: border-box;
+      z-index: 1;
+      width: auto;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+  .angel-img {
+    width: 10rem;
+    animation: 8s ease-in-out 1s infinite alternateangeVole;
+    z-index: 10;
+    position: absolute;
+  }
+
+  .nav-link {
+    font-size: .8rem;
+  }
+
+}
+/* **IPHONE X LANDSCAPE */
+@media only screen 
+    and (min-device-width: 812px) 
+    and (min-device-height: 375px) 
+    and (-webkit-device-pixel-ratio: 3)
+    and (orientation: landscape) { 
+
+      .heading-first {
+        font-size: 4rem;
+      }
+
+      .navbar {
+        padding: 1rem 2rem 0;
+      }
+
+      .angel-img {
+        width: 7rem;
+      }
+    }
+
 
 /* ********  1000px ************ */
 @media screen (max-width: 1000px) {
@@ -1118,4 +1195,39 @@ margin-top: 3rem;
   }
 }
 
-/*!!Penser à agrandir le NAV pour les screens > 2000px de width avec un media querie dédié */
+/*** GRANDS ECRANS > 2560px ***/
+@media screen and (min-width: 2560px ) {
+
+  .nav-link {
+    font-size: 1.3rem;
+  }
+
+  .heading-first {
+    font-size: 13rem;
+    margin-top: 4rem;
+    font-weight: 500;
+  }
+
+  .heading-second {
+    margin-top: 2rem;
+  }
+
+  span.first-letter {
+    font-size: 4.3rem;
+  }
+
+  span.second-letter {
+    font-size: 2.7rem;
+  }
+
+  .angel-img {
+    width: 25rem;
+  }
+}
+
+/*** GRANDS ECRANS > 3000px ***/
+@media screen and (min-width: 3000px ) {
+  .heading-first {
+    font-size: 1rem;
+  }
+}
