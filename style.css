@@ -84,7 +84,7 @@ header {
 
 .nav-link {
   padding-left: 2rem;
-  letter-spacing: ;
+  font-size: .9rem;
 }
 
 nav .navbar-nav li a{
@@ -570,7 +570,7 @@ margin-top: 3rem;
 
   .nav-link {
     padding-left: 2rem !important;
-    font-size: .8rem;
+    font-size: .6rem;
   }
 
   .left-mountain {
@@ -615,7 +615,7 @@ margin-top: 3rem;
     text-align: center;
     line-height: 1.1;
     padding: 1rem;
-    margin: 0rem 0;
+    margin: 0;
   }
 
   .heading-second {
@@ -788,6 +788,7 @@ margin-top: 3rem;
     position: relative;
     align-items: center;
     margin-bottom: 0;
+    margin-top: 0;
   }
   
   .profile-image {
@@ -1231,7 +1232,7 @@ and (-webkit-device-pixel-ratio : 3) {
   }
 
   .nav-link {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .heading-first {
