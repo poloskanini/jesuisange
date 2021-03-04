@@ -581,9 +581,9 @@ margin-top: 3rem;
 
   .left-mountain img {
     position: absolute;
-    left: -9rem;
+    left: -11.3rem;
     bottom: 0;
-    width: 110%;
+    width: 120%;
   }
 
   .right-mountain {
@@ -1099,8 +1099,8 @@ and (-webkit-device-pixel-ratio : 3) {
     position: absolute;
   }
 
-  .nav-link {
-    font-size: .8rem;
+  a.nav-link {
+    font-size: .9rem;
   }
 
 }
