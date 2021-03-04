@@ -583,7 +583,7 @@ margin-top: 3rem;
     position: absolute;
     left: -9rem;
     bottom: 0;
-    width: 130%;
+    width: 110%;
   }
 
   .right-mountain {
@@ -607,7 +607,7 @@ margin-top: 3rem;
 
   .heading-first {
     font-family: 'Sacramento', cursive;
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 5px;
     color: #00b894;
     text-shadow: 1px 1.3px 1px gray;
@@ -625,7 +625,7 @@ margin-top: 3rem;
     width: 81%;
     margin: auto;
     margin-bottom: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     line-height: 1.7rem;
     font-weight: 200;
   }
@@ -1070,6 +1070,7 @@ margin-top: 3rem;
 
   .angel-img {
     width: 10rem;
+    animation: 8s ease-in-out 1s infinite  alternate angeVole;
   }
 }
 
@@ -1080,7 +1081,7 @@ and (device-height : 812px)
 and (-webkit-device-pixel-ratio : 3) {
   .heading-first {
       font-family: 'Sacramento', cursive;
-      font-size: 4rem;
+      font-size: 5rem;
       letter-spacing: 5px;
       color: #00b894;
       text-shadow: 1px 1.3px 1px gray;
@@ -1093,7 +1094,7 @@ and (-webkit-device-pixel-ratio : 3) {
 
   .angel-img {
     width: 10rem;
-    animation: 8s ease-in-out 1s infinite alternateangeVole;
+    animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
     position: absolute;
   }
