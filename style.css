@@ -374,7 +374,7 @@ margin-top: 3rem;
   background: white;
   filter: grayscale(1);
   transition: all ease 2s;
-  height: 100vh;
+  height: 80vh;
 }
 
 .main-section:hover {
@@ -383,7 +383,7 @@ margin-top: 3rem;
 
 /* INTRODUCTION */
 .introduction {
-  margin: 5rem 0 0;
+  margin: 1rem 0 0;
   position: relative;
   width: 100%;
 }
@@ -394,7 +394,6 @@ margin-top: 3rem;
   min-height: 30vh;
   z-index: 0;
   position: relative;
-  padding: 2rem;
 }
 
 .profile-left {
@@ -409,10 +408,8 @@ margin-top: 3rem;
   width: 30rem;
   height: 30rem;
   transition: ease 2s filter;
-  margin-bottom: 2rem;
+  margin: 2rem;
 }
-
-
 
 .profile-right {
   display: flex;
@@ -425,6 +422,7 @@ margin-top: 3rem;
 .profile-title {
   margin-bottom: 1rem;
   text-align: center;
+  font-size: 1rem;
 }
 
 .profile-text {
@@ -438,7 +436,7 @@ margin-top: 3rem;
   height: 100vh;
   position: relative;
   z-index: 0;
-  margin: -1rem;
+  margin-top: 2rem;
   background-color: #FFFFFF;
 }
 
@@ -458,6 +456,10 @@ margin-top: 3rem;
   position: relative;
   z-index: 10000;
   background: transparent;
+}
+
+.card-body {
+  margin-top: 2rem;
 }
 
 .list-group-item {
@@ -670,7 +672,7 @@ margin-top: 3rem;
     height: 10rem;
     filter: grayscale(1);
     transition: ease 2s filter;
-    margin-top: 3rem;
+    
     margin-bottom: 0;
   }
   
@@ -689,7 +691,7 @@ margin-top: 3rem;
 
 }
 /* ***********   MOBILE PAYSAGE     *********** */
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 600px) and (orientation: landscape) {
 
   .hero::after {
     content: '';
@@ -779,7 +781,6 @@ margin-top: 3rem;
     min-height: 30vh;
     z-index: 0;
     position: relative;
-    padding: 2rem;
   }
   
   .profile-left {
@@ -813,8 +814,8 @@ margin-top: 3rem;
   }
   
   .profile-title {
-    margin-bottom: 1rem;
     text-align: center;
+    font-size: 1rem;
   }
   
   .profile-text {
@@ -1038,11 +1039,15 @@ margin-top: 3rem;
       color: #00b894;
       font-size: 2.4rem;
   }
+
 }
 
 /*** IPAD PRO PAYSAGE ***/
 @media only screen and (min-device-width: 1023px) and (max-device-width: 1365px) and (orientation: landscape) {
   
+  .heading-first {
+    font-size: 6rem;
+  }
   .heading-second {
     font-family: 'Playfair Display', serif;  text-align: center;
     margin-top: 2rem;
@@ -1050,6 +1055,21 @@ margin-top: 3rem;
     line-height: 2.3rem;
     width: 80%;
     margin: auto;
+  }
+
+  span.first-letter {
+    color: #CFB1D4;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  
+  span.second-letter {
+      color: #00b894;
+      font-size: 1rem;
+  }
+
+  .angel-img {
+    width: 10rem;
   }
 }
 
