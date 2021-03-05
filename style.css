@@ -404,6 +404,7 @@ margin-top: 3rem;
   z-index: 0;
   position: relative;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .profile-left {
@@ -414,7 +415,7 @@ margin-top: 3rem;
 }
 
 .profile-image {
-  width: 25vw;
+  width: 20vw;
   transition: ease 2s filter;
 }
 
@@ -554,6 +555,7 @@ margin-top: 3rem;
   background-color: #80CAA5;
   color: #FFF;
   position: relative;
+  margin: 0;
 }
 
 #testimonials::before {
