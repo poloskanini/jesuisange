@@ -43,7 +43,6 @@ body {
   right: 0;
   width: 100%;
   height: 10vh;
-
 }
 .mountains {
   overflow: hidden;
@@ -102,11 +101,7 @@ nav .navbar-nav li a:hover {
 
 }
 
-/* .navbar .navlink {
-  padding-left: 0 !important;
-} */
-
-/* Effet nav-link Middle */
+/* Effet nav-link */
 a.nav-link:before {
   content: "";
   position: absolute;
@@ -117,7 +112,7 @@ a.nav-link:before {
   background-color: #CFB1D4;
   visibility: hidden;
   transform: scaleX(0);
-  transition: all 0.6s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a.nav-link:hover:before {
@@ -393,13 +388,6 @@ margin-top: 3rem;
 
 .main-section {
   background: white;
-  filter: grayscale(1);
-  transition: all ease 2s;
-  height: 80vh;
-}
-
-.main-section:hover {
-  filter: grayscale(0);
 }
 
 /* INTRODUCTION */
@@ -415,6 +403,7 @@ margin-top: 3rem;
   min-height: 30vh;
   z-index: 0;
   position: relative;
+  margin-top: 2rem;
 }
 
 .profile-left {
@@ -422,14 +411,11 @@ margin-top: 3rem;
   max-width: 100%;
   position: relative;
   align-items: center;
-  margin: 3rem;
 }
 
 .profile-image {
-  width: 30rem;
-  height: 30rem;
+  width: 25vw;
   transition: ease 2s filter;
-  margin: 2rem;
 }
 
 .profile-right {
@@ -456,10 +442,10 @@ margin-top: 3rem;
 
 /* SERVICES SECTION */
 .services-section {
-  height: 100vh;
   position: relative;
   z-index: 0;
-  margin-top: 2rem;
+  margin: 2rem;
+  margin-top: 0;
   background-color: #FFFFFF;
 }
 
@@ -559,6 +545,46 @@ margin-top: 3rem;
   margin: auto;
   width: 12rem;
   cursor: pointer;
+}
+
+/* TESTIMONIALS */
+
+#testimonials {
+  text-align: center;
+  background-color: #80CAA5;
+  color: #FFF;
+  position: relative;
+}
+
+#testimonials::before {
+  content: '';
+  position: absolute;
+  background: url(images/clouds-bottom.svg) ;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transform: rotate(0.5turn);
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-text {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.testimonial-image {
+  width: 10%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.carousel-item {
+  padding: 7% 15%;
 }
 
 /********** MEDIAS QUERIES **************/
@@ -683,10 +709,6 @@ margin-top: 3rem;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
     position: absolute;
-  }
-
-  .main-section {
-    filter: grayscale(0);
   }
 
   .profile-title {
@@ -828,10 +850,6 @@ margin-top: 3rem;
     position: absolute;
   }
 
-  .main-section {
-    filter: grayscale(0);
-  }
-
   .profile-section {
     background: white;
     min-height: 30vh;
@@ -944,10 +962,6 @@ margin-top: 3rem;
     position: relative;
     }
 
-  .main-section {
-    filter: grayscale(0);
-  }
-
   .left-mountain img {
     position: absolute;
     left: -10rem;
@@ -1046,10 +1060,6 @@ margin-top: 3rem;
     z-index: 10;
     position: absolute;
   }
-
-  .main-section {
-    filter: grayscale(0);
-  }
 }  
 
 /*** IPAD PRO PORTRAIT ***/
@@ -1101,11 +1111,6 @@ margin-top: 3rem;
       color: #00b894;
       font-size: 2.4rem;
   }
-
-  .main-section {
-    filter: grayscale(0);
-  }
-
 }
 
 /*** IPAD PRO PAYSAGE ***/
@@ -1138,10 +1143,6 @@ margin-top: 3rem;
     width: 10rem;
     animation: 8s ease-in-out 1s infinite  alternate angeVole;
   }
-
-  .main-section {
-    filter: grayscale(0);
-  }
 }
 
 /*** IPHONE X ***/
@@ -1173,10 +1174,6 @@ and (-webkit-device-pixel-ratio : 3) {
     font-size: .9rem;
   }
 
-  .main-section {
-    filter: grayscale(0);
-  }
-
   .profile-title {
     margin: 0;
     text-align: center;
@@ -1202,9 +1199,6 @@ and (orientation: landscape) {
     .angel-img {
       width: 7rem;
     }
-    .main-section {
-      filter: grayscale(0);
-    }
   }
 
 /*** Galaxy Fold */
@@ -1228,10 +1222,6 @@ and (orientation: landscape) {
 
   span.second-letter {
     font-size: .8rem;
-  }
-
-  .main-section {
-    filter: grayscale(0);
   }
 }
 
