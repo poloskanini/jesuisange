@@ -161,6 +161,7 @@ margin-top: 3rem;
   animation: 8s ease-in-out 1s infinite alternate angeVole;
   z-index: 10;
   position: absolute;
+  padding-top: 1rem;
 }
 
 .bulle-img {
@@ -416,13 +417,14 @@ margin-top: 3rem;
   flex-direction: column;
   justify-content: center;
   margin: 2rem;
-  background: linear-gradient(white, white, rgb(245, 243, 243));
+  /* background: linear-gradient(white, white, rgb(245, 243, 243)); */
 }
 
 .profile-title {
-  margin-bottom: 1rem;
+  margin: 3rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
+  width: 100%;
 }
 
 .profile-text {
@@ -444,22 +446,23 @@ margin-top: 3rem;
   background: white;
 }
 
-/* CLOUD DIVIDER */
-.cloud-divider {
-  background: white;
-  margin: auto;
-  width: 12rem;
-  cursor: pointer;
-}
-
 .card {
   position: relative;
   z-index: 10000;
   background: transparent;
 }
 
+.card-img-top {
+  width: 30%;
+  margin: auto;
+}
+
 .card-body {
   margin-top: 2rem;
+}
+
+.card-services{
+  padding: 3% 2%;
 }
 
 .list-group-item {
@@ -526,8 +529,13 @@ margin-top: 3rem;
   }
 }
 
-
-
+/* CLOUD DIVIDER */
+.cloud-divider {
+  background: white;
+  margin: auto;
+  width: 12rem;
+  cursor: pointer;
+}
 
 /********** MEDIAS QUERIES **************/
 
@@ -624,8 +632,7 @@ margin-top: 3rem;
     font-family: 'Playfair Display', serif;
     width: 81%;
     margin: auto;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    padding-top: 1.2rem;
     line-height: 1.7rem;
     font-weight: 200;
   }
@@ -654,11 +661,8 @@ margin-top: 3rem;
     position: absolute;
   }
 
-  .bulle-img {
-    width: 6rem;
-    position: absolute;
-    right: 3rem;
-    bottom: -4rem;
+  .main-section {
+    filter: grayscale(0);
   }
 
   .profile-left {
@@ -776,6 +780,10 @@ margin-top: 3rem;
     position: absolute;
   }
 
+  .main-section {
+    filter: grayscale(0);
+  }
+
   .profile-section {
     background: white;
     min-height: 30vh;
@@ -883,11 +891,8 @@ margin-top: 3rem;
     position: relative;
     }
 
-  .bulle-img {
-    width: 6rem;
-    position: absolute;
-    right: 7rem;
-    bottom: -6rem;
+  .main-section {
+    filter: grayscale(0);
   }
 
   .left-mountain img {
@@ -988,6 +993,10 @@ margin-top: 3rem;
     z-index: 10;
     position: absolute;
   }
+
+  .main-section {
+    filter: grayscale(0);
+  }
 }  
 
 /*** IPAD PRO PORTRAIT ***/
@@ -1040,6 +1049,10 @@ margin-top: 3rem;
       font-size: 2.4rem;
   }
 
+  .main-section {
+    filter: grayscale(0);
+  }
+
 }
 
 /*** IPAD PRO PAYSAGE ***/
@@ -1072,6 +1085,10 @@ margin-top: 3rem;
     width: 10rem;
     animation: 8s ease-in-out 1s infinite  alternate angeVole;
   }
+
+  .main-section {
+    filter: grayscale(0);
+  }
 }
 
 /*** IPHONE X ***/
@@ -1103,26 +1120,31 @@ and (-webkit-device-pixel-ratio : 3) {
     font-size: .9rem;
   }
 
+  .main-section {
+    filter: grayscale(0);
+  }
 }
+
 /* **IPHONE X LANDSCAPE */
-@media only screen 
-    and (min-device-width: 812px) 
-    and (min-device-height: 375px) 
-    and (-webkit-device-pixel-ratio: 3)
-    and (orientation: landscape) { 
+@media only screen
+and (min-device-width: 812px) 
+and (min-device-height: 375px) 
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: landscape) { 
 
-      .heading-first {
-        font-size: 4rem;
-      }
-
-      .navbar {
-        padding: 1rem 2rem 0;
-      }
-
-      .angel-img {
-        width: 7rem;
-      }
+    .heading-first {
+      font-size: 4rem;
     }
+    .navbar {
+      padding: 1rem 2rem 0;
+    }
+    .angel-img {
+      width: 7rem;
+    }
+    .main-section {
+      filter: grayscale(0);
+    }
+  }
 
 /*** Galaxy Fold */
 @media screen and (max-height: 280px) {
@@ -1146,104 +1168,12 @@ and (-webkit-device-pixel-ratio : 3) {
   span.second-letter {
     font-size: .8rem;
   }
+
+  .main-section {
+    filter: grayscale(0);
+  }
 }
 
-
-
-
-/* ********  1000px ************ */
-/* @media screen (max-width: 1000px) {
-  .hero {
-    height: 100vh;
-    background: url(images/Back-mountains.png), url(images/);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    left: 0;
-    z-index: 0;
-    overflow: hidden;
-  }
-
-  .animation {
-    position: absolute;
-    overflow-x: hidden;
-    z-index: -1;
-    height: 120vh;
-    width: 100vw;
-    top: 0 ;
-  }
-  
-  .left-mountain img {
-    position: absolute;
-    left: -3rem;
-    bottom: 0;
-    width: 54%;
-  }
-  
-  .right-mountain img {
-    position: absolute;
-    right: -5rem;
-    bottom: 0rem;
-    width: 65%;
-    z-index: -1;
-  }
-
-  .heading-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .heading-first {
-    font-family: 'Sacramento', cursive;
-    font-size: 12rem;
-    letter-spacing: 5px;
-    color: #00b894;
-    text-shadow: 1px 1.3px 1px gray;
-    box-sizing: border-box;
-    z-index: 1;
-    width: auto;
-    text-align: center;
-  }
-  
-  .heading-second {
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    margin: 2rem;
-  }
-  
-  span.first-letter {
-    color: #CFB1D4;
-    font-size: 3rem;
-    font-weight: bolder;
-  }
-  
-  span.second-letter {
-      color: #00b894;
-      font-size: 2rem;
-  }
-
-  .angel {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    }
-
-  .angel-img {
-    width: 18rem;
-    animation: 8s ease-in-out 1s infinite alternate angeVole;
-    z-index: 10;
-    position: absolute;
-    }
-
-  .bulle-img {
-    width: 8rem;
-    position: absolute;
-    right: 6rem;
-  }
-} */
 
 /*** GRANDS ECRANS > 2800px ***/
 @media screen and (min-width: 2900px ) {
