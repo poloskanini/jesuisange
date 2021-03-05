@@ -132,6 +132,7 @@ a.nav-link:hover:before {
 .heading-first {
   font-family: 'Sacramento', cursive;
   font-size: 9rem;
+  font-weight: 600;
   letter-spacing: 5px;
   color: #00b894;
   text-shadow: 1px 1.3px 1px gray;
