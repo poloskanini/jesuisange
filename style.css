@@ -44,6 +44,7 @@ body {
   width: 100%;
   height: 10vh;
 }
+
 .mountains {
   overflow: hidden;
 }
@@ -615,7 +616,7 @@ margin-top: 3rem;
   .hero::after {
     content: '';
     position: absolute;
-    background: url(images/clouds-bottom.svg), white;
+    background: url(images/clouds-bottom.svg);
     bottom: 0;
     left: 0;
     right: 0;
