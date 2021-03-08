@@ -67,14 +67,9 @@ body {
   z-index: -1;
 }
 
-/* HEADER / NAV-BAR */
-header {
-  margin: 2rem;
-}
-
 /* NAVBAR BOOTSTRAP*/
 .navbar {
-  z-index: 5000;
+  z-index: 15000;
   padding: 2rem 2rem .5rem;
 }
 
@@ -84,7 +79,7 @@ header {
 
 .nav-link {
   padding-left: 2rem;
-  font-size: .9rem;
+  font-size: 1vh;
   position: relative;
 }
 
@@ -182,12 +177,13 @@ margin-top: 3rem;
 }
 
 .bulle-img {
-  width: 4rem;
+  width: 7.5vh;
   position: absolute;
   right: 6rem;
+  animation: 8s ease-in-out 1s infinite alternate angeVole;
 }
 
-/* Affiner animation de l'ange*/
+/* Animation de l'ange (à affiner) */
 @keyframes angeVole {
   0% {
     transform: translateY(0);
@@ -317,7 +313,6 @@ margin-top: 3rem;
   top: 12rem;
   left: 7rem;
   z-index: -1;
-  
 }
 
 .cloud-fourth img {
@@ -386,6 +381,37 @@ margin-top: 3rem;
   }
 }
 
+.cloud-eigth {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  animation: 300s ease-out 0s infinite running cloud-eigth-fly;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: -1;
+  margin: 2rem;
+  top: 50vh;
+  overflow-x: hidden;
+}
+
+.cloud-eigth img {
+  width: 7vh;
+}
+
+@keyframes cloud-eigth-fly {
+  0% { 
+      background-repeat: no-repeat;
+      transform: translateX(-600px);
+  }
+  50% {
+      background-repeat: no-repeat;
+  }
+  100% { 
+      background-repeat: no-repeat;
+      transform: translateX(4000px);
+  }
+}
+
 /* MAIN */
 
 .main-section {
@@ -404,7 +430,6 @@ margin-top: 3rem;
   background: white;
   min-height: 30vh;
   z-index: 0;
-  position: relative;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -418,7 +443,7 @@ margin-top: 3rem;
 
 .profile-image {
   width: 20vw;
-  transition: ease 2s filter;
+  border-radius: 20vw;
 }
 
 .profile-right {
@@ -640,6 +665,7 @@ margin-top: 3rem;
   .nav-link {
     padding-left: 2rem !important;
     font-size: .6rem;
+    font-size: 1.3vh !important;
   }
 
   .left-mountain {
@@ -719,7 +745,7 @@ margin-top: 3rem;
 
   span.first-letter {
     color: #CFB1D4;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     font-weight: bolder;
   }
   span.second-letter {
@@ -741,6 +767,14 @@ margin-top: 3rem;
     position: absolute;
   }
 
+  .bulle-img {
+    width: 9.5vh;
+    position: absolute;
+    right: 4rem;
+    top: 1rem;
+    animation: 8s ease-in-out 1s infinite alternate angeVole;
+  }
+
   .profile-title {
     font-size: 4vw;
     margin: 5vh auto 0;
@@ -755,7 +789,6 @@ margin-top: 3rem;
   .profile-image {
     width: 10rem;
     height: 10rem;
-    filter: grayscale(1);
     transition: ease 2s filter;
     margin-bottom: 0;
   }
@@ -883,6 +916,13 @@ margin-top: 3rem;
     position: absolute;
   }
 
+  .bulle-img {
+    width: 17vh;
+    position: absolute;
+    top: -1rem;
+    right: 3rem;
+  }
+
   .cloud-first {
     display: inline-block;
     width: 100px;
@@ -940,15 +980,10 @@ margin-top: 3rem;
   .profile-image {
     width: 10rem;
     height: 10rem;
-    filter: grayscale(1);
     transition: ease 2s filter;
     margin-bottom: 2rem;
   }
-  
-  .profile-image:hover {
-    filter: grayscale(0);
-  }
-  
+
   .profile-right {
     display: flex;
     flex-direction: column;
@@ -1172,13 +1207,6 @@ margin-top: 3rem;
     width: 64%;
   }
 
-  .bulle-img {
-    width: 11rem;
-    position: absolute;
-    right: 7rem;
-    bottom: -6rem;
-  }
-
   span.first-letter {
     color: #CFB1D4;
     font-size: 3.4rem;
@@ -1241,12 +1269,21 @@ and (-webkit-device-pixel-ratio : 3) {
       margin-top: 2rem;
     }
 
+    
+
   .angel-img {
     width: 10rem;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
     z-index: 10;
     position: absolute;
   }
+
+  .bulle-img {
+    width: 8vh;
+    position: absolute;
+    top: 1.2rem;
+    right: 4.7rem;
+}
 
   a.nav-link {
     font-size: .9rem;
@@ -1276,6 +1313,10 @@ and (orientation: landscape) {
     }
     .angel-img {
       width: 7rem;
+    }
+    .cloud-sixth img {
+      width: 6rem;
+      opacity: .9;
     }
   }
 
