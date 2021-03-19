@@ -79,7 +79,7 @@ body {
 
 .nav-link {
   padding-left: 2rem;
-  font-size: 1vh;
+  font-size: 1.3vh;
   position: relative;
 }
 
@@ -396,6 +396,7 @@ margin-top: 3rem;
 
 .cloud-eigth img {
   width: 7vh;
+  opacity: .8;
 }
 
 @keyframes cloud-eigth-fly {
@@ -758,6 +759,7 @@ margin-top: 3rem;
     display: flex;
     justify-content: center;
     position: relative;
+    margin-top: 2rem;
     }
     
   .angel-img {
