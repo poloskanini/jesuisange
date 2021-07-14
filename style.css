@@ -443,29 +443,32 @@ margin-top: 3rem;
 }
 
 .profile-image {
-  width: 20vw;
-  border-radius: 20vw;
+  width: 25vw;
+  object-fit: contain;
+  /* border-radius: 20vw; */
+  transform: scaleX(-1);
 }
 
 .profile-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgb(102, 93, 93);
+  color: rgba(149, 141, 141, 1);
   /* background: linear-gradient(white, white, rgb(245, 243, 243)); */
 }
 
 .profile-title {
   margin: 8vh auto 0;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.2rem;
   width: 100%;
-  color: rgb(102, 93, 93);
+  color: #0B9FA1;
 }
 
 .profile-text {
   text-align: justify;
   padding: 1rem;
+  color: #0B9FA1;
 }
 
 /* SERVICES SECTION */
@@ -488,7 +491,7 @@ margin-top: 3rem;
 }
 
 .card-img-top {
-  width: 10vw;
+  width: 8vw;
   margin: auto;
   padding-bottom: 5%;
 }
@@ -498,7 +501,7 @@ margin-top: 3rem;
 }
 
 .card-title {
-  font-size: 1.5vw;
+  font-size: 1.2rem;
   margin-top: 1rem;
   text-transform: uppercase;
 }
@@ -579,7 +582,7 @@ margin-top: 3rem;
 
 #testimonials {
   text-align: center;
-  background-color: #80CAA5;
+  background-color: #abdbc3;
   color: #FFF;
   position: relative;
   margin: 0;
@@ -778,8 +781,9 @@ margin-top: 3rem;
   }
 
   .profile-title {
-    font-size: 4vw;
+    font-size: 1.2rem;
     margin: 5vh auto 0;
+    color: #0B9FA1;
   }
 
   .profile-left {
@@ -789,8 +793,7 @@ margin-top: 3rem;
   }
   
   .profile-image {
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
     transition: ease 2s filter;
     margin-bottom: 0;
   }
@@ -801,9 +804,6 @@ margin-top: 3rem;
     /* padding: 2rem; */
   }
 
-  .profile-text {
-    font-size: 3.4vw;
-  }
 
   /* CLOUD DIVIDER */
   .cloud-divider {
@@ -814,7 +814,7 @@ margin-top: 3rem;
 
   /* Services */
   .card-img-top {
-    width: 10vh;
+    width: 8vh;
     margin: auto;
     padding-bottom: 10%;
   }
@@ -824,7 +824,7 @@ margin-top: 3rem;
   }
 
   .card-title {
-    font-size: 5vw;
+    font-size: 1.2rem;
   }
 
 }
@@ -981,7 +981,6 @@ margin-top: 3rem;
   
   .profile-image {
     width: 10rem;
-    height: 10rem;
     transition: ease 2s filter;
     margin-bottom: 2rem;
   }
@@ -996,17 +995,18 @@ margin-top: 3rem;
   
   .profile-title {
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.2rem;
     width: 100px;
+    padding: 0 20%;
+    color: #0B9FA1;
   }
   
   .profile-text {
     text-align: justify;
-    font-size: 1.8vw;
   }
 
   .card-title {
-    font-size: 2.7vw;
+    font-size: 1.2rem;
   }
 }
 
@@ -1091,9 +1091,10 @@ margin-top: 3rem;
   .profile-title {
     margin: 0;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 1.2rem;
     width: 100%;
-    color: rgb(102, 93, 93);
+    color: #0B9FA1;
+
   }
 }
 
@@ -1272,8 +1273,6 @@ and (-webkit-device-pixel-ratio : 3) {
       margin-top: 2rem;
     }
 
-    
-
   .angel-img {
     width: 10rem;
     animation: 8s ease-in-out 1s infinite alternate angeVole;
@@ -1295,9 +1294,10 @@ and (-webkit-device-pixel-ratio : 3) {
   .profile-title {
     margin: 0;
     text-align: center;
-    font-size: 4vw;
+    font-size: 1.2rem;
     width: 100%;
-    color: rgb(102, 93, 93);
+    color: #0B9FA1;
+    padding: 0 10%;
   }
 }
 
