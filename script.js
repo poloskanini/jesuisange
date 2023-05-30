@@ -1,3 +1,3 @@
-setTimeout(function() {
-  $('.loader').fadeOut('fast');
-}, 10000);
+setTimeout(() => {
+  document.querySelector('.loader').style.display = 'none';
+}, 6500)

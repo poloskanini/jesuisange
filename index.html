@@ -8,8 +8,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- Bootstrap Local -->
   <!-- <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css"> -->
-  <!-- My CSS -->
-  <link rel="stylesheet" href="style.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sacramento&display=swap" rel="stylesheet">
@@ -19,47 +17,47 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
+   <!-- My CSS -->
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="loader">
-    <div class="loader-left"></div>
-    <div class="loader-right"></div>
-  </div>
   
   <!-- **  HERO  ** -->
   <div class="hero">
+
     <!-- HEADER -->
       <!-- BOOTSTRAP NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto flex-row justify-content-center text-center">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#profile">À propos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Mes services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contactez Ange</a>
-              </li>
-            </ul>
+<!-- 
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto flex-row justify-content-center text-center">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#profile">À propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Mes services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contactez Ange</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header> -->
+   
 
     <!-- MAIN HEADING -->
     <div class="heading-container">
       <h1 class="heading-first">
         Je suis Ange
       </h1>
-      <!-- <div class="heading-second">
-        <span class="first-letter">A</span><span class="second-letter">ssistante </span><span class="first-letter">N</span><span class="second-letter">aturellement </span><span class="first-letter">G</span><span class="second-letter">éniale & </span><span class="first-letter">E</span><span class="second-letter">fficace</span>
-      </div> -->
       <div class="angel">
         <!-- <img src="images/bulle.png" alt="bulle-img" class="bulle-img"> -->
         <img src="images/angel.png" alt="angel-img" class="angel-img">
@@ -76,11 +74,15 @@
       </div>
     </div>
 
+    <!-- LOADER -->
+    <div class="loader">
+      <div class="loader-left"></div>
+      <div class="loader-right"></div>
+    </div>
+
     <!-- CLOUDS -->
     <div class="animation">
-      <div class="cloud cloud-first">
-        <img src="images/cloud-white.png" alt="cloud-white">
-      </div>
+
       <div class="cloud cloud-second">
         <img src="images/cloud-white.png" alt="cloud-white">
       </div>
@@ -112,18 +114,28 @@
   
     <!-- Profile-Section -->
   <div class="row introduction">
-    <h2 class="col profile-title"><i class="fas fa-quote-left"></i> <strong>A</strong>ssistante <strong>N</strong>aturellement <i class="fas fa-quote-right"></i></h2>
+    <h2 class="col profile-title">
+      <i class="fas fa-quote-left"></i>
+        
+        <span class="first-letter"> A</span><span class="second-letter">ssistante </span><span class="first-letter">N</span><span class="second-letter">aturellement </span><span class="first-letter">G</span><span class="second-letter">éniale & </span><span class="first-letter">E</span><span class="second-letter">fficace </span>
+
+      <i class="fas fa-quote-right"></i>
+    </h2>
   </div>
 
     <section class="profile-section row justify-content-center d-flex" id="profile">
 
       <article class="profile-left col-12 col-lg-4 d-flex justify-content-center">
-        <img src="images/secretairebis.png" alt="photo-ange" class="profile-image">
+        <img src="images/secretaire.jpg" alt="photo-ange" class="profile-image">
       </article>
 
       <article class="profile-right col-12 col-lg-4">
-        <p class="profile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab est earum assumenda adipisci magnam corrupti numquam ipsum odio. Ad accusantium non quo, reiestiae odit possimus provident voluptate veniam. Incidunt sit consectetur vero sequi?</p>
-        <p class="profile-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ut perferendis magnam! Debitis laudantium consequuntur voluptatibus? Soluta pariatur, perspiciatis tenetur ex dolore et ducimus voluptatum.</p>
+        <p class="profile-text"> Je me présente, je suis Ange, votre partenaire de confiance pour toutes vos tâches administratives.
+        </p>
+        <p class="profile-text">Je comprends à quel point la gestion administrative peut être chronophage et complexe pour les entreprises. C'est pourquoi je suis là pour vous offrir mon expertise et mon soutien professionnel.
+        </p>
+        <p class="profile-text">En me confiant vos tâches administratives, vous bénéficiez d'un <strong>service personnalisé</strong> et adapté à vos besoins spécifiques.</p>
+        <p class="profile-text">Je suis dévouée, rigoureuse et soucieuse de fournir un travail de qualité supérieure. Vous pouvez compter sur ma discrétion, ma confidentialité et ma disponibilité pour répondre à vos demandes.</p>
       </article>
       
     </section>
@@ -137,31 +149,31 @@
             <img src="images/rainbow.png" class="card-img-top   cloud-anim-two" alt="card-img-top">
             <h3 class="card-title text-center">Administratif</h3>
             <ul class="list-group list-group-flush text-center pt-5">
-             <li class="list-group-item">Cras justo odio</li>
-             <li class="list-group-item">Dapibus ac facilisis in</li>
-             <li class="list-group-item">Morbi leo risus</li>
-             <li class="list-group-item">Porta ac consectetur ac</li>
+             <li class="list-group-item">Numérisation</li>
+             <li class="list-group-item">Classification</li>
+             <li class="list-group-item">Archivage</li>
+             <li class="list-group-item">Publipostage</li>
             </ul>
           </div>
         
           <div class="col-lg-4 d-flex flex-column justify-content-center card-services">
             <img src="images/sun2.png" class="card-img-top cloud-anim-two"  alt="card-img-top">
-            <h3 class="card-title text-center">Communication</h3>
+            <h3 class="card-title text-center">Facturation</h3>
             <ul class="list-group list-group-flush text-center pt-5">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Gestion des factures</li>
+              <li class="list-group-item">Suivi des paiements</li>
+              <li class="list-group-item">Communication fournisseurs</li>
+              <li class="list-group-item">Gestion financière fluide</li>
             </ul>      
           </div>
         
           <div class="col-lg-4 d-flex flex-column justify-content-center card-services">
             <img src="images/flowers.png" class="card-img-top   cloud-anim-two" alt="card-img-top">
-            <h3 class="card-title text-center">Commercial</h3>
+            <h3 class="card-title text-center">Secrétariat</h3>
             <ul class="list-group list-group-flush text-center pt-5">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Rédaction de courriers</li>
+              <li class="list-group-item">Gestion de votre agenda</li>
+              <li class="list-group-item">Rappel des échéances</li>              <li class="list-group-item">Mailing et suivi de dossiers</li>
             </ul>
           </div>
         </div>
@@ -174,7 +186,7 @@
   <section id="testimonials" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <h3 class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quia quasi ut? Lorem ipsum dolor sit amet.</h3>
+        <h3 class="testimonial-text">La capacité d'Ange à anticiper les besoins et à résoudre les problèmes de manière proactive a grandement contribué au succès global d'un projet important pour notre entreprise. Merci !</h3>
         <div class="testimonial-wrapper">
         <img src="images/metrise_logo.png" alt="dog-profile" class="testimonial-image">
         <em>Métrise, Entreprise de bâtiment</em>
@@ -182,7 +194,7 @@
       </div>
 
       <div class="carousel-item">
-        <h3 class="testimonial-text">Architecto quibusdam adipisci cupiditate assumenda fuga consequuntur harum ipsum molestiae praesentium!</h3>
+        <h3 class="testimonial-text">Grâce à son professionnalisme et à son efficacité, chaque étape est toujours gérée avec précision et dans les délais impartis.</h3>
         <div class="testimonial-wrapper">
         <img class="testimonial-image" src="images/giraud_paysages.png" alt="lady-profile">
         <em>Giraud Paysages Techflore, Paysagiste</em>

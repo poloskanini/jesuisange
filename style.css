@@ -48,16 +48,20 @@ body {
 
 .mountains {
   overflow: hidden;
+  height: 50%;
 }
 
 .left-mountain img {
   position: absolute;
   left: -3rem;
   bottom: 0;
-  width: 54%;
+  z-index: -1;
+  width: 50%;
+  height: auto;
 }
 .right-mountain {
   overflow: hidden;
+  z-index: -1;
 }
 
 .right-mountain img {
@@ -69,9 +73,21 @@ body {
 }
 
 /* NAVBAR BOOTSTRAP*/
-.navbar {
+
+header {
+  height: 3rem;
+  padding: 3rem;
+}
+
+#navbarNav {
+  position: fixed;
+  z-index: 1000000000;
+}
+
+nav .navbar {
   z-index: 15000;
   padding: 2rem 2rem .5rem;
+  position: absolute;
 }
 
 .navbar-toggler-icon {
@@ -100,7 +116,10 @@ nav .navbar-nav li a{
 nav .navbar-nav li a:hover {
   color: #CFB1D4 !important;
   transition: color 0.3s ease;
+}
 
+.navbar-nav {
+  padding-right: 5rem;
 }
 
 /* Effet nav-link */
@@ -128,21 +147,20 @@ a.nav-link:hover:before {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-top: 1rem;
 }
 
 .heading-first {
   font-family: 'Sacramento', cursive;
-  font-size: 9rem;
+  font-size: clamp(60px, 10vw, 140px);
   font-weight: 600;
   letter-spacing: 5px;
   color: #00b894;
   text-shadow: 1px 1.3px 1px rgb(177, 175, 175);
   box-sizing: border-box;
-  z-index: 1;
+  z-index: 2;
   width: auto;
   text-align: center;
-  margin: 2rem 2rem;
+  margin: 5rem 2rem;
 }
 
 .heading-second {
@@ -151,7 +169,7 @@ a.nav-link:hover:before {
   margin: 2rem;
   font-weight: 200;
   line-height: 2.3rem;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -178,7 +196,7 @@ margin-top: 3rem;
 .angel-img {
   width: 15rem;
   animation: 8s ease-in-out 1s infinite alternate angeVole;
-  z-index: 10;
+  z-index: 2;
   position: absolute;
   padding-top: 1rem;
 }
@@ -209,9 +227,8 @@ margin-top: 3rem;
 
 /* CLOUDS */
 .animation {
-  position: absolute;
   overflow-x: hidden;
-  z-index: -1;
+  z-index: 1;
   height: 120vh;
   width: 100vw;
   top: 0 ;
@@ -219,9 +236,8 @@ margin-top: 3rem;
 
 .cloud-first {
   display: inline-block;
-  width: 100px;
   height: auto;
-  animation: 39s ease-out 0s infinite running cloud-first-fly;
+  animation: 20s ease-out 0s infinite running cloud-first-fly;
   position: absolute;
   box-sizing: border-box;
   z-index: -1;
@@ -236,19 +252,21 @@ margin-top: 3rem;
   box-sizing: border-box;
   z-index: -1;
   opacity: .9;
+  overflow-x: hidden;
+
 }
 
 @keyframes cloud-first-fly {
   0% { 
       background-repeat: no-repeat;
-      transform: translateX(-100%);
+      transform: translateX(-100px);
   }
   50% {
       background-repeat: no-repeat;
   }
   100% { 
       background-repeat: no-repeat;
-      transform: translateX(4000px);
+      transform: translateX(+2500px);
   }
 }
 
@@ -259,6 +277,8 @@ margin-top: 3rem;
   top: 12rem;
   box-sizing: border-box;
   z-index: -1;
+  overflow-x: hidden;
+
 }
 
 .cloud-second img {
@@ -267,6 +287,8 @@ margin-top: 3rem;
   position: relative;
   box-sizing: border-box;
   opacity: .9;
+  overflow-x: hidden;
+
 }
 
 @keyframes cloud-second-fly {
@@ -291,11 +313,14 @@ margin-top: 3rem;
   animation: 300s cubic-bezier(0.19, 1, 0.22, 1) 0s infinite running cloud-third-fly;
   top: 25rem;
   left: 15rem;
-  z-index: -1;
+  overflow-x: hidden;
+
 }
 
 .cloud-third img {
   width: 5rem;
+  overflow-x: hidden;
+
 }
 
 @keyframes cloud-third-fly {
@@ -320,12 +345,16 @@ margin-top: 3rem;
   top: 12rem;
   left: 7rem;
   z-index: -1;
+  overflow-x: hidden;
+
 }
 
 .cloud-fourth img {
   width: 2rem;
   height: .8rem;
   box-sizing: border-box;
+  overflow-x: hidden;
+
 }
 
 .cloud-fifth {
@@ -335,12 +364,16 @@ margin-top: 3rem;
   right: 2rem;
   z-index: -1;
   transform: rotateY(180deg);
+  overflow-x: hidden;
+
 }
 
 .cloud-fifth img {
   width: 5rem;
   height: 2rem;
   opacity: .8;
+  overflow-x: hidden;
+
 }
 
 .cloud-sixth {
@@ -351,11 +384,15 @@ margin-top: 3rem;
   z-index: -1;
   transform: rotateY(180deg);
   opacity: .7;
+  overflow-x: hidden;
+
 }
 
 .cloud-sixth img {
   width: 8rem;
   opacity: .9;
+  overflow-x: hidden;
+
 }
 
 .cloud-seventh {
@@ -364,12 +401,16 @@ margin-top: 3rem;
   animation: 120s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0s infinite running cloud-seventh-fly;
   top: 20rem;
   z-index: -1;
+  overflow-x: hidden;
+
 }
 
 .cloud-seventh img {
   width: 3rem;
   height: 1rem;
   box-sizing: border-box;
+  overflow-x: hidden;
+
 }
 
 @keyframes cloud-seventh-fly {
@@ -404,6 +445,8 @@ margin-top: 3rem;
 .cloud-eigth img {
   width: 7vh;
   opacity: .8;
+  overflow-x: hidden;
+
 }
 
 @keyframes cloud-eigth-fly {
@@ -431,6 +474,10 @@ margin-top: 3rem;
   margin: 1rem 0 0;
   position: relative;
   width: 100%;
+}
+
+.fa-quote-right {
+  padding-left: auto;
 }
 
 /* PROFILE-SECTION */
@@ -634,14 +681,23 @@ margin-top: 3rem;
 
 /* LOADER */
 
+.loader {
+  position: absolute;
+  overflow-x: hidden;
+  z-index: 1000000;
+  height: 120vh;
+  width: 100vw;
+  top: 0 ;
+}
+
 .loader-left {
   position: absolute;
   background: white;
   width: 50%;
   height: 100%;
-  z-index: 1;
   animation-iteration-count: 1;
-  animation: 20s cubic-bezier(0.23, 1, 0.320, 1) 1 slideToLeft;
+  animation: 25s cubic-bezier(0.23, 1, 0.320, 1) 1 slideToLeft;
+  z-index: 10000;
 }
 
 .loader-left::after {
@@ -663,7 +719,7 @@ margin-top: 3rem;
   height: 100%;
   z-index: 1;
   animation-iteration-count: 1;
-  animation: 17s cubic-bezier(0.23, 1, 0.320, 1) slideToRight;
+  animation: 20s cubic-bezier(0.23, 1, 0.320, 1) slideToRight;
   right: 0;
 }
 
@@ -705,6 +761,7 @@ margin-top: 3rem;
 
 
 /* ***********   MOBILE PORTRAIT     *********** */
+
 @media screen and (max-width: 600px) {
   .hero {
     width: 100%;
@@ -735,7 +792,7 @@ margin-top: 3rem;
     z-index: -1;
     height: 120vh;
     width: 100vw;
-    top: 0 ;
+    top: 0;
   }
 
   .nav-list {
@@ -1073,7 +1130,6 @@ margin-top: 3rem;
     text-align: center;
     font-size: 1.2rem;
     width: 100px;
-    padding: 0 20%;
     color: #0B9FA1;
   }
   
@@ -1215,7 +1271,7 @@ margin-top: 3rem;
     z-index: 1;
     width: auto;
     text-align: center;
-    margin-top: 0;
+    margin-top: 3rem;
   }
 
   .heading-second {
@@ -1346,7 +1402,7 @@ and (-webkit-device-pixel-ratio : 3) {
       z-index: 1;
       width: auto;
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 5rem;
     }
 
   .angel-img {
@@ -1373,7 +1429,6 @@ and (-webkit-device-pixel-ratio : 3) {
     font-size: 1.2rem;
     width: 100%;
     color: #0B9FA1;
-    padding: 0 10%;
   }
 }
 
@@ -1390,8 +1445,11 @@ and (orientation: landscape) {
     .navbar {
       padding: 1rem 2rem 0;
     }
+    .angel {
+      margin-top: 0;
+    }
     .angel-img {
-      width: 7rem;
+      width: 9rem;
     }
     .cloud-sixth img {
       width: 6rem;
@@ -1457,3 +1515,4 @@ and (orientation: landscape) {
     width: 25rem;
   }
 }
+
