@@ -4,7 +4,7 @@ body {
   font-family: 'Merriweather', sans-serif;    
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(102, 93, 93);
   margin: 0;
   box-sizing: border-box;
@@ -670,6 +670,10 @@ margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
+.testimonial-stars i {
+  font-size: 1rem;
+}
+
 .testimonial-image {
   width: 10%;
   margin: auto;
@@ -689,6 +693,7 @@ margin-top: 3rem;
 .clients-banner {
   background-image: url('images/aerial-view-businessman-using-computer-laptop.png');
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   height: 40vh;
   display: flex;
@@ -855,8 +860,8 @@ a:hover, a:focus {
 }
 
 .container-scores {
-  width: 28vmin;
-  height: 28vmin;
+  width: 200px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -973,7 +978,6 @@ textarea {
 }
 
 .submit-btn {
-  float: right;
   padding: 7px 35px;
   border-radius: 60px;
   display: inline-block;
@@ -1009,6 +1013,31 @@ font-style: italic;
 input[type=checkbox]:checked + label {
 color: #f00;
 font-style: normal;
+}
+
+/* Contact Specs */
+.contact-specs {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-inner a {
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.fa-phone {
+  display: block;
+}
+
+.contact-specs-title {
+  font-weight: 900;
 }
 
 /* FOOTER */

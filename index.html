@@ -132,7 +132,7 @@
       <article class="profile-right col-12 col-lg-4">
         <p class="profile-text"> Je me présente, je suis Ange, votre partenaire de confiance pour toutes vos tâches administratives.
         </p>
-        <p class="profile-text">Je comprends à quel point la gestion administrative peut être chronophage et complexe pour les entreprises. C'est pourquoi je suis là pour vous offrir mon expertise et mon soutien professionnel.
+        <p class="profile-text">Je comprends à quel point <strong>la gestion administrative</strong> peut être chronophage et complexe pour les entreprises. C'est pourquoi je suis là pour vous offrir mon expertise et mon soutien professionnel.
         </p>
         <p class="profile-text">En me confiant vos tâches administratives, vous bénéficiez d'un <strong>service personnalisé</strong> et adapté à vos besoins spécifiques.</p>
         <p class="profile-text">Je suis dévouée, rigoureuse et soucieuse de fournir un travail de qualité supérieure. Vous pouvez compter sur ma discrétion, ma confidentialité et ma disponibilité pour répondre à vos demandes.</p>
@@ -187,11 +187,13 @@
         <div class="carousel-item active">
           <h3 class="testimonial-text">La capacité d'Ange à anticiper les besoins et à résoudre les problèmes de manière proactive a grandement contribué au succès global d'un projet important pour notre entreprise. Merci !
             <br>
-            <i class="fa-solid fa-star" style="color: #ede60c;"></i>
-            <i class="fa-solid fa-star" style="color: #ede60c;"></i>
-            <i class="fa-solid fa-star" style="color: #ede60c;"></i>
-            <i class="fa-solid fa-star" style="color: #ede60c;"></i>
-            <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+              <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+              <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+              <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+              <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+            </div>
           </h3>
           <div class="testimonial-wrapper">
           <img src="images/metrise_logo.png" alt="dog-profile" class="testimonial-image">
@@ -202,11 +204,13 @@
         <div class="carousel-item">
           <h3 class="testimonial-text">Grâce à son professionnalisme et à son efficacité, chaque étape est toujours gérée avec précision et dans les délais impartis. Nous recommandons Ange pour tout entrepreneur souhaitant gagner du temps.
             <br>
-            <i class="fa-solid fa-star" style="color: #ede60c;"></i>
-            <i class="fa-solid fa-star" style="color: #ede60c;"></i>
-            <i class="fa-solid fa-star" style="color: #ede60c;"></i>
-            <i class="fa-solid fa-star" style="color: #ede60c;"></i>
-            <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+              <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+              <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+              <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+              <i class="fa-solid fa-star" style="color: #ede60c;"></i>
+            </div>
           </h3>
           <div class="testimonial-wrapper">
           <img class="testimonial-image" src="images/giraud_paysages.png" alt="lady-profile">
@@ -220,6 +224,7 @@
 
     <section id="clients">
       <div class="container-fluid">
+        <!-- Bannière parallax -->
         <div class="row clients-banner"></div>
         <div class="row p-5 text-center clients-item">
           <div class="col clients-title text-center my-5">
@@ -315,58 +320,106 @@
 
     <section id="about-me">
       <div class="wrapper">
-        <div class="container-scores mx-3">
+        <div class="container-scores m-3 p-3">
           <i class="fas fa-smile-beam"></i>
           <span class="num" data-val="45">+00</span>
           <span class="text">Clients satisfaits</span>
         </div>
-        <div class="container-scores mx-3">
+        <div class="container-scores m-3 p-2">
           <i class="fa-solid fa-calendar-days"></i>
           <span class="num" data-val="10">+00</span>
           <span class="text">Années d'expérience</span>
         </div>
-        <div class="container-scores mx-3">
+        <div class="container-scores m-3 p-3">
           <i class="fa-solid fa-computer"></i>
-          <span class="num" data-val="12">+00</span>
+          <span class="num" data-val="15">+00</span>
           <span class="text">Logiciels maitrisés</span>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <div class="container">
+    <div class="container contact-container mb-5">
       <div class="col clients-title text-center my-5">
         <h2>Contactez moi !</h2>
       </div>
-      <div class="row input-container">
-          <div class="col-xs-12">
-            <div class="styled-input wide">
-              <input type="text" required />
-              <label>Nom</label> 
+      <form method="POST" action="contact-form-process.php">
+        <div class="row">
+          <div class="col contact-form">
+            <div class="row input-container">
+                <div class="col-xs-12">
+                  <div class="styled-input wide">
+                    <input type="text" id="Name" name="Name" required />
+                    <label for="Name">Nom</label> 
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="styled-input">
+                    <input type="email" id="Email" name="Email" required />
+                    <label for="email">Email</label> 
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="styled-input" style="float:right;">
+                    <input type="telephone" id="Telephone" name="Telephone"required />
+                    <label for="Telephone">Téléphone</label> 
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="styled-input wide">
+                    <textarea id="Message" name="Message" required></textarea>
+                    <label for="Message">Votre message</label>
+                  </div>
+                </div>
+                <div class="col-xs-12 text-center">
+                  <button class="btn-lrg submit-btn" type="submit">Envoyer</button>
+                </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="styled-input">
-              <input type="text" required />
-              <label>Email</label> 
+          <div class="col contact-specs text-center">
+            <div class="row">
+              <div class="col">
+                <p class="contact-specs-title text-uppercase">Localisation</p>
+                <i class="fa-solid fa-location-dot"></i>
+                <address>7 route neuve<br>
+                  91450 Soisy-sur-Seine
+                </address>
+              </div>
+              <div class="col">
+                <p class="contact-specs-title text-uppercase">Contact</p>
+                <div class="contact-inner">
+                  <a class="block" href="tel:0623240668">
+                    <i class="fa-solid fa-phone"></i>
+                  </a>
+                  <a class="block" href="">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="contact-specs-title text-uppercase">Horaires</p>
+                  <i class="fa-regular fa-clock"></i>
+                  <p>LUN-VEN</p>
+                  <p>09:30 – 18:00</p>
+                </div>
+                <div class="col">
+                  <p class="contact-specs-title text-uppercase">Suivez-moi</p>
+                  <div class="contact-inner">
+                    <a href="">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="styled-input" style="float:right;">
-              <input type="text" required />
-              <label>Téléphone</label> 
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="styled-input wide">
-              <textarea required></textarea>
-              <label>Votre message</label>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="btn-lrg submit-btn">Envoyer</div>
-          </div>
-      </div>
+        </div>
+      </form>
     </div>
     
 
