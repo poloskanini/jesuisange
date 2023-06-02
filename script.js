@@ -37,7 +37,7 @@ const observer = new IntersectionObserver((entries) => {
     if(entry.isIntersecting) {
       entry.target.classList.add("is-visible");
       launch();
-      observer.unobserve(entry.target);
+      // observer.unobserve(entry.target);
     }
   }
 }, options)
