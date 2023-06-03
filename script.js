@@ -1,3 +1,26 @@
+// INTERSECTION OBSERVER REVEAL-VISIBLE
+const ratio = .1;
+
+const optionsReveal = {
+  root: null,
+  rootMargin: '0px',
+  threshold: ratio
+}
+
+const handleIntersect = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      entry.target.classList.add('reveal-visible');
+      observer.unobserve(entry.target)
+    }
+  })
+}
+
+const observerReveal = new IntersectionObserver(handleIntersect, optionsReveal);
+document.querySelectorAll('.reveal').forEach(function (r) {
+  observerReveal.observe(r);
+})
+
 setTimeout(() => {
   document.querySelector('.loader').style.display = 'none';
 }, 6500)

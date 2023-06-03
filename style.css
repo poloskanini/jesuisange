@@ -43,6 +43,36 @@ strong {
   font-weight: 900;
 }
 
+[class*="fade-"] {
+  opacity: 0;
+}
+
+.reveal {
+  opacity: 0
+}
+
+.reveal-visible {
+  opacity: 1;
+  transition: 3s cubic-bezier(.5, .0, 0, 1);
+}
+
+.fade-visible {
+  opacity: 1;
+  transition: 10s cubic-bezier(.5, .0, 0, 1);
+}
+
+.fade-1 {
+  transition-delay: 0s;
+}
+
+.fade-2 {
+  transition-delay: .5s;
+}
+
+.fade-3 {
+  transition-delay: 2s;
+}
+
 /********* HERO **************/
 /* HERO */
 .hero {
@@ -174,7 +204,7 @@ a.nav-link:hover:before {
 
 .heading-first {
   font-family: 'Sacramento', cursive;
-  font-size: clamp(85px, 28vw, 150px);
+  font-size: clamp(75px, 28vw, 150px);
   font-weight: 600;
   letter-spacing: 5px;
   color: #00b894;
@@ -561,6 +591,10 @@ span.second-letter {
   margin: 2rem;
   margin-top: 0;
   background-color: #FFFFFF;
+}
+
+#services h3 {
+  font-weight: bold;
 }
 
 .row-services-section {
