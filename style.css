@@ -53,7 +53,7 @@ strong {
 
 .reveal-visible {
   opacity: 1;
-  transition: 3s cubic-bezier(.5, .0, 0, 1);
+  transition: 2s cubic-bezier(.5, .0, 0, 1);
 }
 
 .fade-visible {
@@ -81,7 +81,6 @@ strong {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
   left: 0;
   top: 0;
@@ -544,7 +543,7 @@ margin-top: 3rem;
 }
 
 .profile-image {
-  width: 25vw;
+  width: clamp(20rem, 22vw, 30rem);
   object-fit: contain;
   /* border-radius: 20vw; */
   transform: scaleX(-1);
@@ -556,6 +555,7 @@ margin-top: 3rem;
   justify-content: center;
   /* background: linear-gradient(white, white, rgb(245, 243, 243)); */
 }
+
 
 .profile-title {
   margin: 8vh auto 0;
