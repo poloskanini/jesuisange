@@ -12,16 +12,6 @@
   font-family: "Kimberlie Display";
   src: url("fonts/Kimberlie-BF64723c3f526c0.otf");
 }
-
-@font-face {
-  font-family: "Staylove";
-  src: url("fonts/staylove-6ymv1.otf")
-}
-
-@font-face {
-  font-family: "Hatboury";
-  src: url('fonts/Hatboury-Glenstar-BF6475be0eebe09.otf')
-}
 /* BASIC RESETS */
 html,
 body {
@@ -910,12 +900,12 @@ a:hover, a:focus {
 }
 
 .elementor-shape-fill {
-  fill: #05878e;
+  fill: #02384b;
 }
 
 /* ABOUT ME */
 #about-me {
-  background-color: #05878e;
+  background-color: #02384b;
   padding: 2rem 0;
 }
 
@@ -1123,29 +1113,12 @@ footer {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   padding: 1rem;
 }
 
-.made-by {
-  font-family: 'Hatboury';
-  font-size: 1.3rem;
-  color: white;
-  text-decoration: none;
-}
-
-.made-by:hover {
-  color: grey;
-}
-
 .mentions-legales {
   cursor: pointer;
-  color: white;
-}
-
-.nb {
-  width: 1.5rem;
   color: white;
 }
 
