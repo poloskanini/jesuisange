@@ -12,15 +12,12 @@ define('MJ_APIKEY_PRIVATE', 'c38f88aa336083980bfcfd690372ba28');
 // Instancier un nouveau mail
 $mj = new Client(MJ_APIKEY_PUBLIC, MJ_APIKEY_PRIVATE, true,['version' => 'v3.1']);
 
-if(!empty($_POST['Name'])
-    && !empty($_POST['Email']) 
-    && !empty($_POST['Telephone']) 
-    && !empty($_POST['Message'])) {
+if(!empty($_POST['Name']) && !empty($_POST['Email']) && !empty($_POST['Telephone']) && !empty($_POST['Message'])) {
 
-      $name = htmlspecialchars($_POST['Name']);
-      $email = htmlspecialchars($_POST['Email']);
-      $telephone = htmlspecialchars($_POST['Telephone']);
-      $message = htmlspecialchars($_POST['Message']);
+      $name = htmlspecialchars(strip_tags($_POST['Name']));
+      $email = htmlspecialchars(strip_tags($_POST['Email']));
+      $telephone = htmlspecialchars(strip_tags($_POST['Telephone']));
+      $message = htmlspecialchars(strip_tags($_POST['Message']));
 
       if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $body = [
@@ -63,7 +60,9 @@ if(!empty($_POST['Name'])
           ]
       ];
 
-      // TODO: Ajouter une alerte Bootstrap sur l'index.html (trouver le moyen)
+      $res = ["success" => $success, "msg" => $msg];
+      echo json_encode($res);
+
       // Envoi de l'email
       $response = $mj->post(Resources::$Email, ['body' => $body]);
       $response->success();
@@ -74,4 +73,5 @@ if(!empty($_POST['Name'])
         die();
       }
   }
+
 ?>

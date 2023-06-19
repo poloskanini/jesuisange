@@ -66,3 +66,43 @@ const observer = new IntersectionObserver((entries) => {
 }, options)
 
 observer.observe(wrapperTop);
+
+
+// AJAX CONTACT FORM
+const contactForm = document.querySelector(".contact-form");
+
+const contact = document.getElementById("contact");
+let clicked = false;
+
+contact.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let data = new FormData(this);
+  let xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function() {
+    
+    if (this.readyState == 4 && this.status == 200) {
+
+      if(!clicked) {
+        let messageSent = document.createElement("p");
+        messageSent.innerText = "Message envoyé !";
+        contactForm.setAttribute("class", "text-center");
+        contactForm.appendChild(messageSent);
+        clicked = true;
+      } else {
+        return
+      }
+      
+    } else if (this.readyState == 4) {
+      alert("Une erreur est survenue...");
+    }
+  };
+
+  xhr.open("POST", "/contact.php", true);
+  xhr.responseType = "json";
+  // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.send(data);
+
+  return false;
+});

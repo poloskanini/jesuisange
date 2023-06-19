@@ -1122,6 +1122,16 @@ footer {
   color: white;
 }
 
+/*Cursor Pointer*/
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFF;
+  transition: .1s;
+}
+
 /* LOADER */
 
 .loader {
